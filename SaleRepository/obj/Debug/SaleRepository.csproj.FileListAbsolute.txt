@@ -1,0 +1,11 @@
+D:\__dhsp\___web\WebQuanLyBanHang\SaleRepository\bin\Debug\SaleRepository.dll
+D:\__dhsp\___web\WebQuanLyBanHang\SaleRepository\bin\Debug\SaleRepository.pdb
+D:\__dhsp\___web\WebQuanLyBanHang\SaleRepository\bin\Debug\ConnectDataBase.dll
+D:\__dhsp\___web\WebQuanLyBanHang\SaleRepository\bin\Debug\Sale.dll
+D:\__dhsp\___web\WebQuanLyBanHang\SaleRepository\bin\Debug\ConnectDataBase.pdb
+D:\__dhsp\___web\WebQuanLyBanHang\SaleRepository\bin\Debug\Sale.pdb
+D:\__dhsp\___web\WebQuanLyBanHang\SaleRepository\obj\Debug\SaleRepository.csprojAssemblyReference.cache
+D:\__dhsp\___web\WebQuanLyBanHang\SaleRepository\obj\Debug\SaleRepository.csproj.CoreCompileInputs.cache
+D:\__dhsp\___web\WebQuanLyBanHang\SaleRepository\obj\Debug\SaleRepository.csproj.CopyComplete
+D:\__dhsp\___web\WebQuanLyBanHang\SaleRepository\obj\Debug\SaleRepository.dll
+D:\__dhsp\___web\WebQuanLyBanHang\SaleRepository\obj\Debug\SaleRepository.pdb

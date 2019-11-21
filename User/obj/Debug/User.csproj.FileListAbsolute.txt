@@ -1,0 +1,27 @@
+C:\Users\Nguyen Hoang Duy\source\repos\QuanLyBanHang\User\bin\Debug\User.dll
+C:\Users\Nguyen Hoang Duy\source\repos\QuanLyBanHang\User\bin\Debug\User.pdb
+C:\Users\Nguyen Hoang Duy\source\repos\QuanLyBanHang\User\bin\Debug\ConnectDataBase.dll
+C:\Users\Nguyen Hoang Duy\source\repos\QuanLyBanHang\User\bin\Debug\ConnectDataBase.pdb
+C:\Users\Nguyen Hoang Duy\source\repos\QuanLyBanHang\User\obj\Debug\User.csprojResolveAssemblyReference.cache
+C:\Users\Nguyen Hoang Duy\source\repos\QuanLyBanHang\User\obj\Debug\User.csproj.CoreCompileInputs.cache
+C:\Users\Nguyen Hoang Duy\source\repos\QuanLyBanHang\User\obj\Debug\User.csproj.CopyComplete
+C:\Users\Nguyen Hoang Duy\source\repos\QuanLyBanHang\User\obj\Debug\User.dll
+C:\Users\Nguyen Hoang Duy\source\repos\QuanLyBanHang\User\obj\Debug\User.pdb
+D:\website\QuanLyBanHang\User\bin\Debug\User.dll
+D:\website\QuanLyBanHang\User\bin\Debug\User.pdb
+D:\website\QuanLyBanHang\User\bin\Debug\ConnectDataBase.dll
+D:\website\QuanLyBanHang\User\bin\Debug\ConnectDataBase.pdb
+D:\website\QuanLyBanHang\User\obj\Debug\User.csprojAssemblyReference.cache
+D:\website\QuanLyBanHang\User\obj\Debug\User.csproj.CoreCompileInputs.cache
+D:\website\QuanLyBanHang\User\obj\Debug\User.csproj.CopyComplete
+D:\website\QuanLyBanHang\User\obj\Debug\User.dll
+D:\website\QuanLyBanHang\User\obj\Debug\User.pdb
+D:\__dhsp\___web\WebQuanLyBanHang\User\bin\Debug\User.dll
+D:\__dhsp\___web\WebQuanLyBanHang\User\bin\Debug\User.pdb
+D:\__dhsp\___web\WebQuanLyBanHang\User\bin\Debug\ConnectDataBase.dll
+D:\__dhsp\___web\WebQuanLyBanHang\User\bin\Debug\ConnectDataBase.pdb
+D:\__dhsp\___web\WebQuanLyBanHang\User\obj\Debug\User.csprojAssemblyReference.cache
+D:\__dhsp\___web\WebQuanLyBanHang\User\obj\Debug\User.csproj.CoreCompileInputs.cache
+D:\__dhsp\___web\WebQuanLyBanHang\User\obj\Debug\User.csproj.CopyComplete
+D:\__dhsp\___web\WebQuanLyBanHang\User\obj\Debug\User.dll
+D:\__dhsp\___web\WebQuanLyBanHang\User\obj\Debug\User.pdb

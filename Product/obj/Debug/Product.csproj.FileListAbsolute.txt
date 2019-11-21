@@ -1,0 +1,17 @@
+E:\website\QuanLyBanHang\Product\bin\Debug\Product.dll
+E:\website\QuanLyBanHang\Product\bin\Debug\Product.pdb
+E:\website\QuanLyBanHang\Product\obj\Debug\Product.csproj.CoreCompileInputs.cache
+E:\website\QuanLyBanHang\Product\obj\Debug\Product.dll
+E:\website\QuanLyBanHang\Product\obj\Debug\Product.pdb
+D:\website\QuanLyBanHang\Product\bin\Debug\Product.dll
+D:\website\QuanLyBanHang\Product\bin\Debug\Product.pdb
+D:\website\QuanLyBanHang\Product\obj\Debug\Product.csprojAssemblyReference.cache
+D:\website\QuanLyBanHang\Product\obj\Debug\Product.csproj.CoreCompileInputs.cache
+D:\website\QuanLyBanHang\Product\obj\Debug\Product.dll
+D:\website\QuanLyBanHang\Product\obj\Debug\Product.pdb
+D:\__dhsp\___web\WebQuanLyBanHang\Product\bin\Debug\Product.dll
+D:\__dhsp\___web\WebQuanLyBanHang\Product\bin\Debug\Product.pdb
+D:\__dhsp\___web\WebQuanLyBanHang\Product\obj\Debug\Product.csprojAssemblyReference.cache
+D:\__dhsp\___web\WebQuanLyBanHang\Product\obj\Debug\Product.csproj.CoreCompileInputs.cache
+D:\__dhsp\___web\WebQuanLyBanHang\Product\obj\Debug\Product.dll
+D:\__dhsp\___web\WebQuanLyBanHang\Product\obj\Debug\Product.pdb
