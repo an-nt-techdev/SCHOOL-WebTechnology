@@ -31,3 +31,13 @@ D:\__dhsp\___web\WebQuanLyBanHang\Login\obj\Debug\LoginRepository.csproj.CoreCom
 D:\__dhsp\___web\WebQuanLyBanHang\Login\obj\Debug\LoginRepository.csproj.CopyComplete
 D:\__dhsp\___web\WebQuanLyBanHang\Login\obj\Debug\Login.dll
 D:\__dhsp\___web\WebQuanLyBanHang\Login\obj\Debug\Login.pdb
+D:\CN-WEB-NET\NET-WEB-Technology\Login\bin\Debug\Login.dll
+D:\CN-WEB-NET\NET-WEB-Technology\Login\bin\Debug\Login.pdb
+D:\CN-WEB-NET\NET-WEB-Technology\Login\bin\Debug\ConnectDataBase.dll
+D:\CN-WEB-NET\NET-WEB-Technology\Login\bin\Debug\User.dll
+D:\CN-WEB-NET\NET-WEB-Technology\Login\bin\Debug\ConnectDataBase.pdb
+D:\CN-WEB-NET\NET-WEB-Technology\Login\bin\Debug\User.pdb
+D:\CN-WEB-NET\NET-WEB-Technology\Login\obj\Debug\LoginRepository.csprojAssemblyReference.cache
+D:\CN-WEB-NET\NET-WEB-Technology\Login\obj\Debug\LoginRepository.csproj.CopyComplete
+D:\CN-WEB-NET\NET-WEB-Technology\Login\obj\Debug\Login.dll
+D:\CN-WEB-NET\NET-WEB-Technology\Login\obj\Debug\Login.pdb

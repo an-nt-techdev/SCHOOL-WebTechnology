@@ -25,3 +25,11 @@ D:\__dhsp\___web\WebQuanLyBanHang\Employee\obj\Debug\Employee.csproj.CoreCompile
 D:\__dhsp\___web\WebQuanLyBanHang\Employee\obj\Debug\Employee.csproj.CopyComplete
 D:\__dhsp\___web\WebQuanLyBanHang\Employee\obj\Debug\Employee.dll
 D:\__dhsp\___web\WebQuanLyBanHang\Employee\obj\Debug\Employee.pdb
+D:\CN-WEB-NET\NET-WEB-Technology\Employee\bin\Debug\Employee.dll
+D:\CN-WEB-NET\NET-WEB-Technology\Employee\bin\Debug\Employee.pdb
+D:\CN-WEB-NET\NET-WEB-Technology\Employee\bin\Debug\ConnectDataBase.dll
+D:\CN-WEB-NET\NET-WEB-Technology\Employee\bin\Debug\ConnectDataBase.pdb
+D:\CN-WEB-NET\NET-WEB-Technology\Employee\obj\Debug\Employee.csprojAssemblyReference.cache
+D:\CN-WEB-NET\NET-WEB-Technology\Employee\obj\Debug\Employee.csproj.CopyComplete
+D:\CN-WEB-NET\NET-WEB-Technology\Employee\obj\Debug\Employee.dll
+D:\CN-WEB-NET\NET-WEB-Technology\Employee\obj\Debug\Employee.pdb

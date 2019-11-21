@@ -31,3 +31,13 @@ D:\__dhsp\___web\WebQuanLyBanHang\CustomerRepository\obj\Debug\CustomerRepositor
 D:\__dhsp\___web\WebQuanLyBanHang\CustomerRepository\obj\Debug\CustomerRepository.csproj.CopyComplete
 D:\__dhsp\___web\WebQuanLyBanHang\CustomerRepository\obj\Debug\CustomerRepository.dll
 D:\__dhsp\___web\WebQuanLyBanHang\CustomerRepository\obj\Debug\CustomerRepository.pdb
+D:\CN-WEB-NET\NET-WEB-Technology\CustomerRepository\bin\Debug\CustomerRepository.dll
+D:\CN-WEB-NET\NET-WEB-Technology\CustomerRepository\bin\Debug\CustomerRepository.pdb
+D:\CN-WEB-NET\NET-WEB-Technology\CustomerRepository\bin\Debug\ConnectDataBase.dll
+D:\CN-WEB-NET\NET-WEB-Technology\CustomerRepository\bin\Debug\Customer.dll
+D:\CN-WEB-NET\NET-WEB-Technology\CustomerRepository\bin\Debug\ConnectDataBase.pdb
+D:\CN-WEB-NET\NET-WEB-Technology\CustomerRepository\bin\Debug\Customer.pdb
+D:\CN-WEB-NET\NET-WEB-Technology\CustomerRepository\obj\Debug\CustomerRepository.csprojAssemblyReference.cache
+D:\CN-WEB-NET\NET-WEB-Technology\CustomerRepository\obj\Debug\CustomerRepository.csproj.CopyComplete
+D:\CN-WEB-NET\NET-WEB-Technology\CustomerRepository\obj\Debug\CustomerRepository.dll
+D:\CN-WEB-NET\NET-WEB-Technology\CustomerRepository\obj\Debug\CustomerRepository.pdb

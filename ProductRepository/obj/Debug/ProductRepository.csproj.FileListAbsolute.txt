@@ -20,3 +20,13 @@ D:\__dhsp\___web\WebQuanLyBanHang\ProductRepository\obj\Debug\ProductRepository.
 D:\__dhsp\___web\WebQuanLyBanHang\ProductRepository\obj\Debug\ProductRepository.csproj.CopyComplete
 D:\__dhsp\___web\WebQuanLyBanHang\ProductRepository\obj\Debug\ProductRepository.dll
 D:\__dhsp\___web\WebQuanLyBanHang\ProductRepository\obj\Debug\ProductRepository.pdb
+D:\CN-WEB-NET\NET-WEB-Technology\ProductRepository\bin\Debug\ProductRepository.dll
+D:\CN-WEB-NET\NET-WEB-Technology\ProductRepository\bin\Debug\ProductRepository.pdb
+D:\CN-WEB-NET\NET-WEB-Technology\ProductRepository\bin\Debug\ConnectDataBase.dll
+D:\CN-WEB-NET\NET-WEB-Technology\ProductRepository\bin\Debug\Product.dll
+D:\CN-WEB-NET\NET-WEB-Technology\ProductRepository\bin\Debug\ConnectDataBase.pdb
+D:\CN-WEB-NET\NET-WEB-Technology\ProductRepository\bin\Debug\Product.pdb
+D:\CN-WEB-NET\NET-WEB-Technology\ProductRepository\obj\Debug\ProductRepository.csprojAssemblyReference.cache
+D:\CN-WEB-NET\NET-WEB-Technology\ProductRepository\obj\Debug\ProductRepository.csproj.CopyComplete
+D:\CN-WEB-NET\NET-WEB-Technology\ProductRepository\obj\Debug\ProductRepository.dll
+D:\CN-WEB-NET\NET-WEB-Technology\ProductRepository\obj\Debug\ProductRepository.pdb

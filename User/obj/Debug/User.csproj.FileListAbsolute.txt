@@ -25,3 +25,11 @@ D:\__dhsp\___web\WebQuanLyBanHang\User\obj\Debug\User.csproj.CoreCompileInputs.c
 D:\__dhsp\___web\WebQuanLyBanHang\User\obj\Debug\User.csproj.CopyComplete
 D:\__dhsp\___web\WebQuanLyBanHang\User\obj\Debug\User.dll
 D:\__dhsp\___web\WebQuanLyBanHang\User\obj\Debug\User.pdb
+D:\CN-WEB-NET\NET-WEB-Technology\User\bin\Debug\User.dll
+D:\CN-WEB-NET\NET-WEB-Technology\User\bin\Debug\User.pdb
+D:\CN-WEB-NET\NET-WEB-Technology\User\bin\Debug\ConnectDataBase.dll
+D:\CN-WEB-NET\NET-WEB-Technology\User\bin\Debug\ConnectDataBase.pdb
+D:\CN-WEB-NET\NET-WEB-Technology\User\obj\Debug\User.csprojAssemblyReference.cache
+D:\CN-WEB-NET\NET-WEB-Technology\User\obj\Debug\User.csproj.CopyComplete
+D:\CN-WEB-NET\NET-WEB-Technology\User\obj\Debug\User.dll
+D:\CN-WEB-NET\NET-WEB-Technology\User\obj\Debug\User.pdb

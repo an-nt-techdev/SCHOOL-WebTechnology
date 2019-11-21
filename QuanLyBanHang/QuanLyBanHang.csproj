@@ -61,6 +61,7 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Extensions" />
@@ -199,6 +200,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\MyDB.mdf" />
+    <Content Include="App_Data\MyDB_log.ldf">
+      <DependentUpon>MyDB.mdf</DependentUpon>
+    </Content>
     <Content Include="assets\bootstrap-4\css\bootstrap-grid.css" />
     <Content Include="assets\bootstrap-4\css\bootstrap-grid.min.css" />
     <Content Include="assets\bootstrap-4\css\bootstrap-reboot.css" />
@@ -909,7 +914,6 @@
     <Content Include="Views\Product\PrintBarCode.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="assets\bootstrap-switch\examples\" />
     <Folder Include="assets\fullcalendar\demos\" />
     <Folder Include="assets\jquery-slimscroll\examples\" />

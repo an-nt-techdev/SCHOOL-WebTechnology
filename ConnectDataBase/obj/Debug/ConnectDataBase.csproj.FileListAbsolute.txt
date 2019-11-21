@@ -33,3 +33,10 @@ D:\__dhsp\___web\WebQuanLyBanHang\ConnectDataBase\obj\Debug\ConnectDataBase.cspr
 D:\__dhsp\___web\WebQuanLyBanHang\ConnectDataBase\obj\Debug\ConnectDataBase.csproj.CopyComplete
 D:\__dhsp\___web\WebQuanLyBanHang\ConnectDataBase\obj\Debug\ConnectDataBase.dll
 D:\__dhsp\___web\WebQuanLyBanHang\ConnectDataBase\obj\Debug\ConnectDataBase.pdb
+D:\CN-WEB-NET\NET-WEB-Technology\ConnectDataBase\bin\Debug\ConnectDataBase.dll
+D:\CN-WEB-NET\NET-WEB-Technology\ConnectDataBase\bin\Debug\ConnectDataBase.pdb
+D:\CN-WEB-NET\NET-WEB-Technology\ConnectDataBase\bin\Debug\Newtonsoft.Json.dll
+D:\CN-WEB-NET\NET-WEB-Technology\ConnectDataBase\obj\Debug\ConnectDataBase.csprojAssemblyReference.cache
+D:\CN-WEB-NET\NET-WEB-Technology\ConnectDataBase\obj\Debug\ConnectDataBase.csproj.CopyComplete
+D:\CN-WEB-NET\NET-WEB-Technology\ConnectDataBase\obj\Debug\ConnectDataBase.dll
+D:\CN-WEB-NET\NET-WEB-Technology\ConnectDataBase\obj\Debug\ConnectDataBase.pdb

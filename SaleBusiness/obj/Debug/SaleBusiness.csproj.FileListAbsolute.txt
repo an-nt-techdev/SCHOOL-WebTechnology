@@ -11,3 +11,15 @@ D:\__dhsp\___web\WebQuanLyBanHang\SaleBusiness\obj\Debug\SaleBusiness.csproj.Cor
 D:\__dhsp\___web\WebQuanLyBanHang\SaleBusiness\obj\Debug\SaleBusiness.csproj.CopyComplete
 D:\__dhsp\___web\WebQuanLyBanHang\SaleBusiness\obj\Debug\SaleBusiness.dll
 D:\__dhsp\___web\WebQuanLyBanHang\SaleBusiness\obj\Debug\SaleBusiness.pdb
+D:\CN-WEB-NET\NET-WEB-Technology\SaleBusiness\bin\Debug\SaleBusiness.dll
+D:\CN-WEB-NET\NET-WEB-Technology\SaleBusiness\bin\Debug\SaleBusiness.pdb
+D:\CN-WEB-NET\NET-WEB-Technology\SaleBusiness\bin\Debug\ConnectDataBase.dll
+D:\CN-WEB-NET\NET-WEB-Technology\SaleBusiness\bin\Debug\Sale.dll
+D:\CN-WEB-NET\NET-WEB-Technology\SaleBusiness\bin\Debug\SaleRepository.dll
+D:\CN-WEB-NET\NET-WEB-Technology\SaleBusiness\bin\Debug\ConnectDataBase.pdb
+D:\CN-WEB-NET\NET-WEB-Technology\SaleBusiness\bin\Debug\SaleRepository.pdb
+D:\CN-WEB-NET\NET-WEB-Technology\SaleBusiness\bin\Debug\Sale.pdb
+D:\CN-WEB-NET\NET-WEB-Technology\SaleBusiness\obj\Debug\SaleBusiness.csprojAssemblyReference.cache
+D:\CN-WEB-NET\NET-WEB-Technology\SaleBusiness\obj\Debug\SaleBusiness.csproj.CopyComplete
+D:\CN-WEB-NET\NET-WEB-Technology\SaleBusiness\obj\Debug\SaleBusiness.dll
+D:\CN-WEB-NET\NET-WEB-Technology\SaleBusiness\obj\Debug\SaleBusiness.pdb

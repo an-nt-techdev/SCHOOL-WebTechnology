@@ -24,3 +24,15 @@ D:\__dhsp\___web\WebQuanLyBanHang\ProductBusiness\obj\Debug\ProductBusiness.cspr
 D:\__dhsp\___web\WebQuanLyBanHang\ProductBusiness\obj\Debug\ProductBusiness.csproj.CopyComplete
 D:\__dhsp\___web\WebQuanLyBanHang\ProductBusiness\obj\Debug\ProductBusiness.dll
 D:\__dhsp\___web\WebQuanLyBanHang\ProductBusiness\obj\Debug\ProductBusiness.pdb
+D:\CN-WEB-NET\NET-WEB-Technology\ProductBusiness\bin\Debug\ProductBusiness.dll
+D:\CN-WEB-NET\NET-WEB-Technology\ProductBusiness\bin\Debug\ProductBusiness.pdb
+D:\CN-WEB-NET\NET-WEB-Technology\ProductBusiness\bin\Debug\ConnectDataBase.dll
+D:\CN-WEB-NET\NET-WEB-Technology\ProductBusiness\bin\Debug\Product.dll
+D:\CN-WEB-NET\NET-WEB-Technology\ProductBusiness\bin\Debug\ProductRepository.dll
+D:\CN-WEB-NET\NET-WEB-Technology\ProductBusiness\bin\Debug\ConnectDataBase.pdb
+D:\CN-WEB-NET\NET-WEB-Technology\ProductBusiness\bin\Debug\ProductRepository.pdb
+D:\CN-WEB-NET\NET-WEB-Technology\ProductBusiness\bin\Debug\Product.pdb
+D:\CN-WEB-NET\NET-WEB-Technology\ProductBusiness\obj\Debug\ProductBusiness.csprojAssemblyReference.cache
+D:\CN-WEB-NET\NET-WEB-Technology\ProductBusiness\obj\Debug\ProductBusiness.csproj.CopyComplete
+D:\CN-WEB-NET\NET-WEB-Technology\ProductBusiness\obj\Debug\ProductBusiness.dll
+D:\CN-WEB-NET\NET-WEB-Technology\ProductBusiness\obj\Debug\ProductBusiness.pdb

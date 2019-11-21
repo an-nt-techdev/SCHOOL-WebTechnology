@@ -37,3 +37,15 @@ D:\__dhsp\___web\WebQuanLyBanHang\EmployeeExecuteSaveBusiness\obj\Debug\Employee
 D:\__dhsp\___web\WebQuanLyBanHang\EmployeeExecuteSaveBusiness\obj\Debug\EmployeeBusiness.csproj.CopyComplete
 D:\__dhsp\___web\WebQuanLyBanHang\EmployeeExecuteSaveBusiness\obj\Debug\EmployeeExecuteSaveBusiness.dll
 D:\__dhsp\___web\WebQuanLyBanHang\EmployeeExecuteSaveBusiness\obj\Debug\EmployeeExecuteSaveBusiness.pdb
+D:\CN-WEB-NET\NET-WEB-Technology\EmployeeExecuteSaveBusiness\bin\Debug\EmployeeExecuteSaveBusiness.dll
+D:\CN-WEB-NET\NET-WEB-Technology\EmployeeExecuteSaveBusiness\bin\Debug\EmployeeExecuteSaveBusiness.pdb
+D:\CN-WEB-NET\NET-WEB-Technology\EmployeeExecuteSaveBusiness\bin\Debug\ConnectDataBase.dll
+D:\CN-WEB-NET\NET-WEB-Technology\EmployeeExecuteSaveBusiness\bin\Debug\Employee.dll
+D:\CN-WEB-NET\NET-WEB-Technology\EmployeeExecuteSaveBusiness\bin\Debug\EmployeeRepository.dll
+D:\CN-WEB-NET\NET-WEB-Technology\EmployeeExecuteSaveBusiness\bin\Debug\ConnectDataBase.pdb
+D:\CN-WEB-NET\NET-WEB-Technology\EmployeeExecuteSaveBusiness\bin\Debug\EmployeeRepository.pdb
+D:\CN-WEB-NET\NET-WEB-Technology\EmployeeExecuteSaveBusiness\bin\Debug\Employee.pdb
+D:\CN-WEB-NET\NET-WEB-Technology\EmployeeExecuteSaveBusiness\obj\Debug\EmployeeBusiness.csprojAssemblyReference.cache
+D:\CN-WEB-NET\NET-WEB-Technology\EmployeeExecuteSaveBusiness\obj\Debug\EmployeeBusiness.csproj.CopyComplete
+D:\CN-WEB-NET\NET-WEB-Technology\EmployeeExecuteSaveBusiness\obj\Debug\EmployeeExecuteSaveBusiness.dll
+D:\CN-WEB-NET\NET-WEB-Technology\EmployeeExecuteSaveBusiness\obj\Debug\EmployeeExecuteSaveBusiness.pdb

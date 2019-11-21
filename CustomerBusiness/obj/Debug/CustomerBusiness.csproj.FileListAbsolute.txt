@@ -37,3 +37,15 @@ D:\__dhsp\___web\WebQuanLyBanHang\CustomerBusiness\obj\Debug\CustomerBusiness.cs
 D:\__dhsp\___web\WebQuanLyBanHang\CustomerBusiness\obj\Debug\CustomerBusiness.csproj.CopyComplete
 D:\__dhsp\___web\WebQuanLyBanHang\CustomerBusiness\obj\Debug\CustomerBusiness.dll
 D:\__dhsp\___web\WebQuanLyBanHang\CustomerBusiness\obj\Debug\CustomerBusiness.pdb
+D:\CN-WEB-NET\NET-WEB-Technology\CustomerBusiness\bin\Debug\CustomerBusiness.dll
+D:\CN-WEB-NET\NET-WEB-Technology\CustomerBusiness\bin\Debug\CustomerBusiness.pdb
+D:\CN-WEB-NET\NET-WEB-Technology\CustomerBusiness\bin\Debug\ConnectDataBase.dll
+D:\CN-WEB-NET\NET-WEB-Technology\CustomerBusiness\bin\Debug\Customer.dll
+D:\CN-WEB-NET\NET-WEB-Technology\CustomerBusiness\bin\Debug\CustomerRepository.dll
+D:\CN-WEB-NET\NET-WEB-Technology\CustomerBusiness\bin\Debug\ConnectDataBase.pdb
+D:\CN-WEB-NET\NET-WEB-Technology\CustomerBusiness\bin\Debug\CustomerRepository.pdb
+D:\CN-WEB-NET\NET-WEB-Technology\CustomerBusiness\bin\Debug\Customer.pdb
+D:\CN-WEB-NET\NET-WEB-Technology\CustomerBusiness\obj\Debug\CustomerBusiness.csprojAssemblyReference.cache
+D:\CN-WEB-NET\NET-WEB-Technology\CustomerBusiness\obj\Debug\CustomerBusiness.csproj.CopyComplete
+D:\CN-WEB-NET\NET-WEB-Technology\CustomerBusiness\obj\Debug\CustomerBusiness.dll
+D:\CN-WEB-NET\NET-WEB-Technology\CustomerBusiness\obj\Debug\CustomerBusiness.pdb

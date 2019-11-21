@@ -15,3 +15,8 @@ D:\__dhsp\___web\WebQuanLyBanHang\Product\obj\Debug\Product.csprojAssemblyRefere
 D:\__dhsp\___web\WebQuanLyBanHang\Product\obj\Debug\Product.csproj.CoreCompileInputs.cache
 D:\__dhsp\___web\WebQuanLyBanHang\Product\obj\Debug\Product.dll
 D:\__dhsp\___web\WebQuanLyBanHang\Product\obj\Debug\Product.pdb
+D:\CN-WEB-NET\NET-WEB-Technology\Product\bin\Debug\Product.dll
+D:\CN-WEB-NET\NET-WEB-Technology\Product\bin\Debug\Product.pdb
+D:\CN-WEB-NET\NET-WEB-Technology\Product\obj\Debug\Product.csprojAssemblyReference.cache
+D:\CN-WEB-NET\NET-WEB-Technology\Product\obj\Debug\Product.dll
+D:\CN-WEB-NET\NET-WEB-Technology\Product\obj\Debug\Product.pdb

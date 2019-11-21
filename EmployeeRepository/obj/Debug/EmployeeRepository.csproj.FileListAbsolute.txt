@@ -31,3 +31,13 @@ D:\__dhsp\___web\WebQuanLyBanHang\EmployeeRepository\obj\Debug\EmployeeRepositor
 D:\__dhsp\___web\WebQuanLyBanHang\EmployeeRepository\obj\Debug\EmployeeRepository.csproj.CopyComplete
 D:\__dhsp\___web\WebQuanLyBanHang\EmployeeRepository\obj\Debug\EmployeeRepository.dll
 D:\__dhsp\___web\WebQuanLyBanHang\EmployeeRepository\obj\Debug\EmployeeRepository.pdb
+D:\CN-WEB-NET\NET-WEB-Technology\EmployeeRepository\bin\Debug\EmployeeRepository.dll
+D:\CN-WEB-NET\NET-WEB-Technology\EmployeeRepository\bin\Debug\EmployeeRepository.pdb
+D:\CN-WEB-NET\NET-WEB-Technology\EmployeeRepository\bin\Debug\ConnectDataBase.dll
+D:\CN-WEB-NET\NET-WEB-Technology\EmployeeRepository\bin\Debug\Employee.dll
+D:\CN-WEB-NET\NET-WEB-Technology\EmployeeRepository\bin\Debug\ConnectDataBase.pdb
+D:\CN-WEB-NET\NET-WEB-Technology\EmployeeRepository\bin\Debug\Employee.pdb
+D:\CN-WEB-NET\NET-WEB-Technology\EmployeeRepository\obj\Debug\EmployeeRepository.csprojAssemblyReference.cache
+D:\CN-WEB-NET\NET-WEB-Technology\EmployeeRepository\obj\Debug\EmployeeRepository.csproj.CopyComplete
+D:\CN-WEB-NET\NET-WEB-Technology\EmployeeRepository\obj\Debug\EmployeeRepository.dll
+D:\CN-WEB-NET\NET-WEB-Technology\EmployeeRepository\obj\Debug\EmployeeRepository.pdb

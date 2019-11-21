@@ -6,6 +6,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Repository;
+using System.Windows.Forms;
+
 namespace QuanLyBanHang.Controllers
 {
     public class LoginController : CommandBaseController
@@ -20,8 +22,8 @@ namespace QuanLyBanHang.Controllers
         {
             try
             {
-                var result = CommandAction.Execute();
-                if (result.Count() == 1)
+                List<dynamic> result = CommandAction.Execute();
+                if (result.Count() != 0)
                 {
                     this.Session["Email"] = CommandAction.Username;
                     this.Session["EmployeeName"] = result[0].EmployeeName;
