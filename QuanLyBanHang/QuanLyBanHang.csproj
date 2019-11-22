@@ -200,9 +200,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\MyDB.mdf" />
-    <Content Include="App_Data\MyDB_log.ldf">
-      <DependentUpon>MyDB.mdf</DependentUpon>
+    <Content Include="App_Data\QLBH.mdf" />
+    <Content Include="App_Data\QLBH_log.ldf">
+      <DependentUpon>QLBH.mdf</DependentUpon>
     </Content>
     <Content Include="assets\bootstrap-4\css\bootstrap-grid.css" />
     <Content Include="assets\bootstrap-4\css\bootstrap-grid.min.css" />

@@ -11,7 +11,7 @@ namespace ConnectDataBase
         protected string ConnectionString { get; }
         public Connection()
         {
-            this.ConnectionString = @"Data Source=.;Initial Catalog=QLBH;Integrated Security=True";
+            this.ConnectionString = @"Data Source=(Localdb)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\QLBH.mdf;Integrated Security=True";
         }
         public void Dispose()
         {
