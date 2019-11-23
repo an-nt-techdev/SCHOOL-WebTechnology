@@ -34,7 +34,7 @@
                     <div class="btn-toolbar pull-right clearfix">
                         <div class="btn-group">
                             <a class="btn btn-circle show-tooltip" onclick="onBtnAdd();" title="Thêm" href="#"><i class="fa fa-plus"></i></a>
-                            <a class="btn btn-circle show-tooltip" title="Edit selected" href="#"><i class="fa fa-edit"></i></a>
+                            @*<a class="btn btn-circle show-tooltip" title="Edit selected" href="#"><i class="fa fa-edit"></i></a>*@
                         </div>
                         <div class="btn-group">
                             <a class="btn btn-circle show-tooltip" onclick="SalePrintPDF();" title="In PDF" href="#"><i class="fa fa-file-pdf-o"></i></a>
@@ -83,9 +83,12 @@
                                         <td>
                                             <a title="Xem" href="#" onclick="btnView(@item.SaleId);" type="button" class="btn btn-default btn-sm"><span class="fa fa-eye"></span></a>
                                             <a title="Sửa" href="#" onclick="btnEdit(@item.SaleId);" type="button" class="btn btn-default btn-sm"><span class="fa fa-pencil-square-o"></span></a>
-                                            <a title="Xóa" href="#" onclick="btnDelete(@item.SaleId); return false;" type="button" class="btn btn-gray btn-sm"><span class="fa fa-trash-o"></span></a>
-                                            <a title="Hoàn thành" href="#" onclick="changeStatus(@item.SaleId); return false;" type="button" class="btn btn-primary btn-sm"><span class="fa fa-check-square-o"></span></a>
-                                        </td>
+                                            @if (this.Session["Email"].Equals("admin"))
+                                            {
+                                                <a title="Xóa" href="#" onclick="btnDelete(@item.SaleId); return false;" type="button" class="btn btn-gray btn-sm"><span class="fa fa-trash-o"></span></a>
+                                            }
+                                                <a title="Hoàn thành" href="#" onclick="changeStatus(@item.SaleId); return false;" type="button" class="btn btn-primary btn-sm"><span class="fa fa-check-square-o"></span></a>
+                                            </td>
                                     </tr>
                                 }
 

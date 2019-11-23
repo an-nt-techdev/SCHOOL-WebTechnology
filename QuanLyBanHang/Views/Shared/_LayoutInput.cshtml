@@ -27,7 +27,7 @@
     <script src="~/Scripts/JsBarcode.all.min.js"></script>
     <script src="~/Scripts/function.js"></script>
     @{
-        if (this.Session["Email"] == null)
+        if (this.Session["User"] == null)
         {
             <script>isLogin();</script>
         }
