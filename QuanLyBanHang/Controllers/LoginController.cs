@@ -25,10 +25,18 @@ namespace QuanLyBanHang.Controllers
                 List<dynamic> result = CommandAction.Execute();
                 if (result.Count() != 0)
                 {
-                    this.Session["Email"] = CommandAction.Username;
+                    this.Session["User"] = CommandAction.Username;
                     this.Session["EmployeeName"] = result[0].EmployeeName;
                     this.Session["LastLogin"] = DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss");
-                    this.Session["Photo"] = "/img/demo/avatar/avatar1.jpg";
+                    if (this.Session["User"].Equals("admin"))
+                    {
+                        this.Session["Photo"] = "/img/demo/avatar/admin.png";
+                    }
+                    else
+                    {
+                        this.Session["Photo"] = "/img/demo/avatar/avatar2.jpg";
+                    }
+                    
                 
                     this.Session.Timeout = 10;
                     using (var cmd = new LoginUpdateRepository())

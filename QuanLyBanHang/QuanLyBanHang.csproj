@@ -162,6 +162,7 @@
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\SaleController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Controllers\VenderController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -195,6 +196,7 @@
     <Compile Include="Models\Sale\SaleItemExecuteSaveAction.cs" />
     <Compile Include="Models\Sale\SaleListAction.cs" />
     <Compile Include="Models\Sale\SaleViewAction.cs" />
+    <Compile Include="Models\User\UserListAction.cs" />
     <Compile Include="Models\Vender\VenderInputAction.cs" />
     <Compile Include="Models\Vender\VenderListAction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -912,6 +914,7 @@
     <Content Include="Views\Sale\SaleInput.cshtml" />
     <Content Include="Views\Sale\SaleChart.cshtml" />
     <Content Include="Views\Product\PrintBarCode.cshtml" />
+    <Content Include="Views\User\UserList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="assets\bootstrap-switch\examples\" />
@@ -988,6 +991,10 @@
     <ProjectReference Include="..\Sale\Sale.csproj">
       <Project>{6894cbcd-94cf-4b92-97d7-3be13976c40d}</Project>
       <Name>Sale</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UserRepository\UserRepository.csproj">
+      <Project>{0DD78666-F491-4067-8EC8-93179CE51802}</Project>
+      <Name>UserRepository</Name>
     </ProjectReference>
     <ProjectReference Include="..\User\User.csproj">
       <Project>{d8661653-7a7e-479a-b085-d473a5a7055b}</Project>
