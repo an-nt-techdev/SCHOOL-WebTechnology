@@ -64,11 +64,11 @@
                                     <td>@item.LastLogin</td>
 
                                     <td>
-                                        <a title="Sửa" href="#" onclick="btnEdit(@item.Username);" type="button" class="btn btn-default btn-sm"><span class="fa fa-pencil-square-o"></span></a>
-                                        <a title="Xóa" href="#" onclick="btnDelete(@item.Username); return false;" type="button" class="btn btn-default btn-sm"><span class="fa fa-trash-o"></span></a>
+                                        <a title="Sửa" href="#" onclick='btnEdit("@item.Username");' type="button" class="btn btn-default btn-sm"><span class="fa fa-pencil-square-o"></span></a>
+                                        <a title="Xóa" href="#" onclick='btnDelete("@item.Username"); return false;' type="button" class="btn btn-default btn-sm"><span class="fa fa-trash-o"></span></a>
                                         @if (this.ViewBag.isPopup)
                                         {
-                                            <a title="Chọn" href="#" onclick="window.opener.AddData(@item.Username,'@item.EmployeeId');window.close();" type="button" class="btn btn-default btn-sm"><span class="fa fa-check"></span></a>
+                                            <a title="Chọn" href="#" onclick='window.opener.AddData("@item.Username",@item.EmployeeId);window.close();' type="button" class="btn btn-default btn-sm"><span class="fa fa-check"></span></a>
                                         }
                                     </td>
                                 </tr>
@@ -128,8 +128,7 @@
     }
     function btnEdit(username) {
         this.openPopup({
-        url: '/User/UserInput?CommandAction.Username='+username,
-        parameter: "width=800,height=800,top=0"
+            url: "/User/UserInput?CommandAction.Username="+username
         });
     }
     function btnAdd() {

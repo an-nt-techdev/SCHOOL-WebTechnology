@@ -7,7 +7,7 @@ namespace QuanLyBanHang.Models
 {
     public class UserInputAction
     {
-        public String Username { get; set; }
+        public string Username { get; set; }
         public List<dynamic> Execute()
         {
             using (var cmd = new UserGetByUserNameRepository())

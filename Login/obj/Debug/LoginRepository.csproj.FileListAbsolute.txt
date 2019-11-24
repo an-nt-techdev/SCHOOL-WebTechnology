@@ -41,3 +41,14 @@ D:\CN-WEB-NET\NET-WEB-Technology\Login\obj\Debug\LoginRepository.csprojAssemblyR
 D:\CN-WEB-NET\NET-WEB-Technology\Login\obj\Debug\LoginRepository.csproj.CopyComplete
 D:\CN-WEB-NET\NET-WEB-Technology\Login\obj\Debug\Login.dll
 D:\CN-WEB-NET\NET-WEB-Technology\Login\obj\Debug\Login.pdb
+G:\NET-WEB-Technology\Login\bin\Debug\Login.dll
+G:\NET-WEB-Technology\Login\bin\Debug\Login.pdb
+G:\NET-WEB-Technology\Login\bin\Debug\ConnectDataBase.dll
+G:\NET-WEB-Technology\Login\bin\Debug\User.dll
+G:\NET-WEB-Technology\Login\bin\Debug\ConnectDataBase.pdb
+G:\NET-WEB-Technology\Login\bin\Debug\User.pdb
+G:\NET-WEB-Technology\Login\obj\Debug\LoginRepository.csprojAssemblyReference.cache
+G:\NET-WEB-Technology\Login\obj\Debug\LoginRepository.csproj.CoreCompileInputs.cache
+G:\NET-WEB-Technology\Login\obj\Debug\LoginRepository.csproj.CopyComplete
+G:\NET-WEB-Technology\Login\obj\Debug\Login.dll
+G:\NET-WEB-Technology\Login\obj\Debug\Login.pdb

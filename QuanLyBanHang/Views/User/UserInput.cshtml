@@ -1,8 +1,19 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "UserInput";
     Layout = "~/Views/Shared/_LayoutInput.cshtml";
 }
+@if (this.ViewBag.Result.Count >0)
+{
+    <h2>yes</h2>
+    <h2>@this.ViewBag.Result[0].Username</h2>
 
-<h2>UserInput</h2>
+}
+else
+{
+
+    <h2>none</h2>
+    <h2></h2>
+
+}
+
 

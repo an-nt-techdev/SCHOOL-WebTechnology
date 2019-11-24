@@ -9,14 +9,17 @@ namespace Repository
 {
     public class UserGetByUserNameRepository : Connection
     {
-        public String Username { get; set; }
+        public string Username { get; set; }
+
         public List<dynamic> Execute()
         {
             using (var cmd = new Query())
             {
-                cmd.QueryString = "SELECT * FROM [User] WHERE [User].Username=" + Username;
+                cmd.QueryString = "SELECT * FROM [User] WHERE [User].Username=' "+Username+"'";
+                
                 return cmd.ExecuteQuery();
             }
         }
+
     }
 }
