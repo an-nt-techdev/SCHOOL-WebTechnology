@@ -196,8 +196,10 @@
     <Compile Include="Models\Sale\SaleItemExecuteSaveAction.cs" />
     <Compile Include="Models\Sale\SaleListAction.cs" />
     <Compile Include="Models\Sale\SaleViewAction.cs" />
+    <Compile Include="Models\User\UserExecuteSaveAction.cs" />
     <Compile Include="Models\User\UserInputAction.cs" />
     <Compile Include="Models\User\UserListAction.cs" />
+    <Compile Include="Models\User\UsernameExecuteDeleteByUsernameAction.cs" />
     <Compile Include="Models\Vender\VenderInputAction.cs" />
     <Compile Include="Models\Vender\VenderListAction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -899,13 +901,13 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Sale\SaleList.cshtml" />
     <Content Include="Views\Employee\EmployeeList.cshtml" />
-    <Content Include="Views\Customer\CustomerList.cshtml" />
+    <Content Include="Views\Employee\Customer\CustomerList.cshtml" />
     <Content Include="Views\Vender\VenderList.cshtml" />
     <Content Include="Views\Product\ProductList.cshtml" />
     <Content Include="Views\Product\ProductGroupList.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
     <Content Include="Views\Shared\_LayoutInput.cshtml" />
-    <Content Include="Views\Customer\CustomerInput.cshtml" />
+    <Content Include="Views\Employee\Customer\CustomerInput.cshtml" />
     <Content Include="Views\Employee\EmployeeInput.cshtml" />
     <Content Include="Views\Vender\VenderInput.cshtml" />
     <Content Include="Views\Product\ProductInput.cshtml" />
@@ -993,6 +995,10 @@
     <ProjectReference Include="..\Sale\Sale.csproj">
       <Project>{6894cbcd-94cf-4b92-97d7-3be13976c40d}</Project>
       <Name>Sale</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UserBussiness\UserBussiness.csproj">
+      <Project>{8C25057E-78C7-41CD-8E95-2281BBE358BA}</Project>
+      <Name>UserBussiness</Name>
     </ProjectReference>
     <ProjectReference Include="..\UserRepository\UserRepository.csproj">
       <Project>{0DD78666-F491-4067-8EC8-93179CE51802}</Project>
