@@ -203,10 +203,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\QLBH.mdf" />
-    <Content Include="App_Data\QLBH_log.ldf">
-      <DependentUpon>QLBH.mdf</DependentUpon>
-    </Content>
     <Content Include="assets\bootstrap-4\css\bootstrap-grid.css" />
     <Content Include="assets\bootstrap-4\css\bootstrap-grid.min.css" />
     <Content Include="assets\bootstrap-4\css\bootstrap-reboot.css" />
@@ -919,6 +915,7 @@
     <Content Include="Views\User\UserInput.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Data\" />
     <Folder Include="assets\bootstrap-switch\examples\" />
     <Folder Include="assets\fullcalendar\demos\" />
     <Folder Include="assets\jquery-slimscroll\examples\" />

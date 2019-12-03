@@ -737,3 +737,5 @@ G:\NET-WEB-Technology\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.CoreCompileIn
 G:\NET-WEB-Technology\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.CopyComplete
 G:\NET-WEB-Technology\QuanLyBanHang\obj\Debug\QuanLyBanHang.dll
 G:\NET-WEB-Technology\QuanLyBanHang\obj\Debug\QuanLyBanHang.pdb
+D:\CN-WEB-NET\NET-WEB-Technology\QuanLyBanHang\bin\UserRepository.dll
+D:\CN-WEB-NET\NET-WEB-Technology\QuanLyBanHang\bin\UserRepository.pdb
