@@ -87,7 +87,8 @@
                                             {
                                                 <a title="Xóa" href="#" onclick="btnDelete(@item.SaleId); return false;" type="button" class="btn btn-gray btn-sm"><span class="fa fa-trash-o"></span></a>
                                             }
-                                                <a title="Hoàn thành" href="#" onclick="changeStatus(@item.SaleId); return false;" type="button" class="btn btn-primary btn-sm"><span class="fa fa-check-square-o"></span></a>
+                                                <a title="Giao Hàng" href="#" onclick="changeStatus2(@item.SaleId); return false;" type="button" class="btn btn-success btn-sm"><span class="fa fa-shopping-cart"></span></a>
+                                                <a title="Hoàn thành" href="#" onclick="changeStatus1(@item.SaleId); return false;" type="button" class="btn btn-primary btn-sm"><span class="fa fa-check-square-o"></span></a>
                                             </td>
                                     </tr>
                                 }
@@ -109,7 +110,7 @@
     <a id="btn-scrollup" class="btn btn-circle btn-lg" href="#"><i class="fa fa-chevron-up"></i></a>
 </div>
 <script>
-    function changeStatus(id) {
+    function changeStatus1(id) {
         swal({
             title: 'Bạn có chắc chắn đổi trạng thái của đơn #'+id+' ?',
             text: "Sau khi đổi không thể quay lại trạng thái trước!",

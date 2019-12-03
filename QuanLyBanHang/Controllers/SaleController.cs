@@ -19,13 +19,17 @@ namespace QuanLyBanHang.Controllers
             var result = CommandAction.Execute();
             foreach (var item in result)
             {
-                if(item.Status != 1)
+                if(item.Status != 0)
                 {
                     item.StatusShow = "Chưa xử lý";
                 }
-                else
+                else if(item.Status != 1 )
                 {
                     item.StatusShow = "Đã hoàn thành";
+                }
+                else
+                {
+                    item.StatusShow = "Đang Giao Hàng";
                 }
                 item.SaleDate = Convert.ToDateTime(item.SaleDate).ToString("yyyy-MM-dd");
             }
