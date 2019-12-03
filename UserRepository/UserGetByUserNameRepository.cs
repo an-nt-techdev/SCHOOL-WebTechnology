@@ -15,6 +15,7 @@ namespace Repository
         {
             using (var cmd = new Query())
             {
+
                 cmd.QueryString = "SELECT * FROM [User] WHERE [User].Username='"+Username+"'";
                 
                 return cmd.ExecuteQuery();

@@ -42,10 +42,9 @@
                         <table class="table table-advance" id="table1">
                             <thead>
                                 <tr>
-                                    <th>Mã Nhân Viên</th>
                                     <th>User Name</th>
                                     <th>PassWord(MD5)</th>
-                                    <th>Email</th>
+                                    <th>Mã Nhân Viên</th>
                                     <th>Đăng Nhập Lần Cuối</th>
                                     <th>Hành Động</th>
                                 </tr>
@@ -57,10 +56,11 @@
                                     else
                                     {
                                 <tr class="table-flag-blue">
-                                    <td>@item.EmployeeId</td>
                                     <td>@item.Username</td>
-                                    <td>@item.Password</td>
-                                    <td>@item.Email</td>
+                                    <td>
+                                        @item.Password
+                                    </td>
+                                    <td>@item.EmployeeId</td>
                                     <td>@item.LastLogin</td>
 
                                     <td>

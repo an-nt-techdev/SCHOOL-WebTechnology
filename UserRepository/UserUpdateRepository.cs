@@ -12,10 +12,10 @@ namespace Repository
         public Domain.User Item { get; set; }
         public bool Execute()
         {
+            
             using (var cmd = new Query())
             {
-                //cmd.QueryString = "UPDATE [dbo].[User] SET [Password] = '" + Item.Password+ "' ,[Email] = '" + Item.Email + "' WHERE [User].Username = '" + Item.Username + "'";
-                cmd.QueryString = "UPDATE [dbo].[User] SET [Password]='" + Item.Password + "' WHERE [User].Username='"+Item.Username+"'";
+                cmd.QueryString = "UPDATE [dbo].[User] SET [Password]='" + Item.Password + "',[Email] = '" + Item.Email + "' WHERE [User].Username='" + Item.Username+"'";
                 return cmd.ExecuteQueryNonReader();
             }
         }

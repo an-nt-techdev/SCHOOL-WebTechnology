@@ -901,13 +901,13 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Sale\SaleList.cshtml" />
     <Content Include="Views\Employee\EmployeeList.cshtml" />
-    <Content Include="Views\Employee\Customer\CustomerList.cshtml" />
+    <Content Include="Views\Customer\CustomerList.cshtml" />
     <Content Include="Views\Vender\VenderList.cshtml" />
     <Content Include="Views\Product\ProductList.cshtml" />
     <Content Include="Views\Product\ProductGroupList.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
     <Content Include="Views\Shared\_LayoutInput.cshtml" />
-    <Content Include="Views\Employee\Customer\CustomerInput.cshtml" />
+    <Content Include="Views\Customer\CustomerInput.cshtml" />
     <Content Include="Views\Employee\EmployeeInput.cshtml" />
     <Content Include="Views\Vender\VenderInput.cshtml" />
     <Content Include="Views\Product\ProductInput.cshtml" />
