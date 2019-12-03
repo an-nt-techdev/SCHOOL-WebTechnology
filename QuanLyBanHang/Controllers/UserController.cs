@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLyBanHang.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -6,16 +7,17 @@ using System.Web.Mvc;
 
 namespace QuanLyBanHang.Controllers
 {
-    public class UserController : Controller
+    public class UserController : CommandBaseController
     {
         // GET: User
-        public ActionResult Index()
-        {
-            return View();
-        }
-        public ActionResult CustomerList(CustomerListAcion CommandAction, bool isPopup = false)
+        public ActionResult UserList(UserListAction CommandAction, bool isPopup = false)
         {
             this.ViewBag.isPopup = isPopup;
+            this.ViewBag.Result = CommandAction.Execute();
+            return View();
+        }
+        public ActionResult UserInput(UserInputAction CommandAction)
+        {
             this.ViewBag.Result = CommandAction.Execute();
             return View();
         }

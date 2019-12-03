@@ -49,3 +49,16 @@ D:\CN-WEB-NET\NET-WEB-Technology\EmployeeExecuteSaveBusiness\obj\Debug\EmployeeB
 D:\CN-WEB-NET\NET-WEB-Technology\EmployeeExecuteSaveBusiness\obj\Debug\EmployeeBusiness.csproj.CopyComplete
 D:\CN-WEB-NET\NET-WEB-Technology\EmployeeExecuteSaveBusiness\obj\Debug\EmployeeExecuteSaveBusiness.dll
 D:\CN-WEB-NET\NET-WEB-Technology\EmployeeExecuteSaveBusiness\obj\Debug\EmployeeExecuteSaveBusiness.pdb
+G:\NET-WEB-Technology\EmployeeExecuteSaveBusiness\bin\Debug\EmployeeExecuteSaveBusiness.dll
+G:\NET-WEB-Technology\EmployeeExecuteSaveBusiness\bin\Debug\EmployeeExecuteSaveBusiness.pdb
+G:\NET-WEB-Technology\EmployeeExecuteSaveBusiness\bin\Debug\ConnectDataBase.dll
+G:\NET-WEB-Technology\EmployeeExecuteSaveBusiness\bin\Debug\Employee.dll
+G:\NET-WEB-Technology\EmployeeExecuteSaveBusiness\bin\Debug\EmployeeRepository.dll
+G:\NET-WEB-Technology\EmployeeExecuteSaveBusiness\bin\Debug\ConnectDataBase.pdb
+G:\NET-WEB-Technology\EmployeeExecuteSaveBusiness\bin\Debug\EmployeeRepository.pdb
+G:\NET-WEB-Technology\EmployeeExecuteSaveBusiness\bin\Debug\Employee.pdb
+G:\NET-WEB-Technology\EmployeeExecuteSaveBusiness\obj\Debug\EmployeeBusiness.csprojAssemblyReference.cache
+G:\NET-WEB-Technology\EmployeeExecuteSaveBusiness\obj\Debug\EmployeeBusiness.csproj.CoreCompileInputs.cache
+G:\NET-WEB-Technology\EmployeeExecuteSaveBusiness\obj\Debug\EmployeeBusiness.csproj.CopyComplete
+G:\NET-WEB-Technology\EmployeeExecuteSaveBusiness\obj\Debug\EmployeeExecuteSaveBusiness.dll
+G:\NET-WEB-Technology\EmployeeExecuteSaveBusiness\obj\Debug\EmployeeExecuteSaveBusiness.pdb

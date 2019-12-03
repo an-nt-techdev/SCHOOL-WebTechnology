@@ -12,6 +12,7 @@ namespace QuanLyBanHang.Controllers
     {
         public ActionResult Index()
         {
+            Console.Write("cec");
             using(var cmd = new SaleSearchRepository())
             {
                 this.ViewBag.Sale = cmd.Execute();

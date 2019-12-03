@@ -83,7 +83,7 @@
                                         <td>
                                             <a title="Xem" href="#" onclick="btnView(@item.SaleId);" type="button" class="btn btn-default btn-sm"><span class="fa fa-eye"></span></a>
                                             <a title="Sửa" href="#" onclick="btnEdit(@item.SaleId);" type="button" class="btn btn-default btn-sm"><span class="fa fa-pencil-square-o"></span></a>
-                                            @if (this.Session["Email"].Equals("admin"))
+                                            @if (this.Session["User"].Equals("admin"))
                                             {
                                                 <a title="Xóa" href="#" onclick="btnDelete(@item.SaleId); return false;" type="button" class="btn btn-gray btn-sm"><span class="fa fa-trash-o"></span></a>
                                             }

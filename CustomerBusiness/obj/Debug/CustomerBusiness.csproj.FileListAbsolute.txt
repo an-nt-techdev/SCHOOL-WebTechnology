@@ -49,3 +49,16 @@ D:\CN-WEB-NET\NET-WEB-Technology\CustomerBusiness\obj\Debug\CustomerBusiness.csp
 D:\CN-WEB-NET\NET-WEB-Technology\CustomerBusiness\obj\Debug\CustomerBusiness.csproj.CopyComplete
 D:\CN-WEB-NET\NET-WEB-Technology\CustomerBusiness\obj\Debug\CustomerBusiness.dll
 D:\CN-WEB-NET\NET-WEB-Technology\CustomerBusiness\obj\Debug\CustomerBusiness.pdb
+G:\NET-WEB-Technology\CustomerBusiness\bin\Debug\CustomerBusiness.dll
+G:\NET-WEB-Technology\CustomerBusiness\bin\Debug\CustomerBusiness.pdb
+G:\NET-WEB-Technology\CustomerBusiness\bin\Debug\ConnectDataBase.dll
+G:\NET-WEB-Technology\CustomerBusiness\bin\Debug\Customer.dll
+G:\NET-WEB-Technology\CustomerBusiness\bin\Debug\CustomerRepository.dll
+G:\NET-WEB-Technology\CustomerBusiness\bin\Debug\ConnectDataBase.pdb
+G:\NET-WEB-Technology\CustomerBusiness\bin\Debug\CustomerRepository.pdb
+G:\NET-WEB-Technology\CustomerBusiness\bin\Debug\Customer.pdb
+G:\NET-WEB-Technology\CustomerBusiness\obj\Debug\CustomerBusiness.csprojAssemblyReference.cache
+G:\NET-WEB-Technology\CustomerBusiness\obj\Debug\CustomerBusiness.csproj.CoreCompileInputs.cache
+G:\NET-WEB-Technology\CustomerBusiness\obj\Debug\CustomerBusiness.csproj.CopyComplete
+G:\NET-WEB-Technology\CustomerBusiness\obj\Debug\CustomerBusiness.dll
+G:\NET-WEB-Technology\CustomerBusiness\obj\Debug\CustomerBusiness.pdb

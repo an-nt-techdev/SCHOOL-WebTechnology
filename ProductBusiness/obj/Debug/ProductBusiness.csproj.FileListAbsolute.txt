@@ -36,3 +36,16 @@ D:\CN-WEB-NET\NET-WEB-Technology\ProductBusiness\obj\Debug\ProductBusiness.cspro
 D:\CN-WEB-NET\NET-WEB-Technology\ProductBusiness\obj\Debug\ProductBusiness.csproj.CopyComplete
 D:\CN-WEB-NET\NET-WEB-Technology\ProductBusiness\obj\Debug\ProductBusiness.dll
 D:\CN-WEB-NET\NET-WEB-Technology\ProductBusiness\obj\Debug\ProductBusiness.pdb
+G:\NET-WEB-Technology\ProductBusiness\bin\Debug\ProductBusiness.dll
+G:\NET-WEB-Technology\ProductBusiness\bin\Debug\ProductBusiness.pdb
+G:\NET-WEB-Technology\ProductBusiness\bin\Debug\ConnectDataBase.dll
+G:\NET-WEB-Technology\ProductBusiness\bin\Debug\Product.dll
+G:\NET-WEB-Technology\ProductBusiness\bin\Debug\ProductRepository.dll
+G:\NET-WEB-Technology\ProductBusiness\bin\Debug\ConnectDataBase.pdb
+G:\NET-WEB-Technology\ProductBusiness\bin\Debug\ProductRepository.pdb
+G:\NET-WEB-Technology\ProductBusiness\bin\Debug\Product.pdb
+G:\NET-WEB-Technology\ProductBusiness\obj\Debug\ProductBusiness.csprojAssemblyReference.cache
+G:\NET-WEB-Technology\ProductBusiness\obj\Debug\ProductBusiness.csproj.CoreCompileInputs.cache
+G:\NET-WEB-Technology\ProductBusiness\obj\Debug\ProductBusiness.csproj.CopyComplete
+G:\NET-WEB-Technology\ProductBusiness\obj\Debug\ProductBusiness.dll
+G:\NET-WEB-Technology\ProductBusiness\obj\Debug\ProductBusiness.pdb

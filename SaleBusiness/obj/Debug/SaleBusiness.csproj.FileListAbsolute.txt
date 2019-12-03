@@ -23,3 +23,16 @@ D:\CN-WEB-NET\NET-WEB-Technology\SaleBusiness\obj\Debug\SaleBusiness.csprojAssem
 D:\CN-WEB-NET\NET-WEB-Technology\SaleBusiness\obj\Debug\SaleBusiness.csproj.CopyComplete
 D:\CN-WEB-NET\NET-WEB-Technology\SaleBusiness\obj\Debug\SaleBusiness.dll
 D:\CN-WEB-NET\NET-WEB-Technology\SaleBusiness\obj\Debug\SaleBusiness.pdb
+G:\NET-WEB-Technology\SaleBusiness\bin\Debug\SaleBusiness.dll
+G:\NET-WEB-Technology\SaleBusiness\bin\Debug\SaleBusiness.pdb
+G:\NET-WEB-Technology\SaleBusiness\bin\Debug\ConnectDataBase.dll
+G:\NET-WEB-Technology\SaleBusiness\bin\Debug\Sale.dll
+G:\NET-WEB-Technology\SaleBusiness\bin\Debug\SaleRepository.dll
+G:\NET-WEB-Technology\SaleBusiness\bin\Debug\ConnectDataBase.pdb
+G:\NET-WEB-Technology\SaleBusiness\bin\Debug\SaleRepository.pdb
+G:\NET-WEB-Technology\SaleBusiness\bin\Debug\Sale.pdb
+G:\NET-WEB-Technology\SaleBusiness\obj\Debug\SaleBusiness.csprojAssemblyReference.cache
+G:\NET-WEB-Technology\SaleBusiness\obj\Debug\SaleBusiness.csproj.CoreCompileInputs.cache
+G:\NET-WEB-Technology\SaleBusiness\obj\Debug\SaleBusiness.csproj.CopyComplete
+G:\NET-WEB-Technology\SaleBusiness\obj\Debug\SaleBusiness.dll
+G:\NET-WEB-Technology\SaleBusiness\obj\Debug\SaleBusiness.pdb

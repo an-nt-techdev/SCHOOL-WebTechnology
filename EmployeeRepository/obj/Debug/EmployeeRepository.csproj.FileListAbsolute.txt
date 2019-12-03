@@ -41,3 +41,14 @@ D:\CN-WEB-NET\NET-WEB-Technology\EmployeeRepository\obj\Debug\EmployeeRepository
 D:\CN-WEB-NET\NET-WEB-Technology\EmployeeRepository\obj\Debug\EmployeeRepository.csproj.CopyComplete
 D:\CN-WEB-NET\NET-WEB-Technology\EmployeeRepository\obj\Debug\EmployeeRepository.dll
 D:\CN-WEB-NET\NET-WEB-Technology\EmployeeRepository\obj\Debug\EmployeeRepository.pdb
+G:\NET-WEB-Technology\EmployeeRepository\bin\Debug\EmployeeRepository.dll
+G:\NET-WEB-Technology\EmployeeRepository\bin\Debug\EmployeeRepository.pdb
+G:\NET-WEB-Technology\EmployeeRepository\bin\Debug\ConnectDataBase.dll
+G:\NET-WEB-Technology\EmployeeRepository\bin\Debug\Employee.dll
+G:\NET-WEB-Technology\EmployeeRepository\bin\Debug\ConnectDataBase.pdb
+G:\NET-WEB-Technology\EmployeeRepository\bin\Debug\Employee.pdb
+G:\NET-WEB-Technology\EmployeeRepository\obj\Debug\EmployeeRepository.csprojAssemblyReference.cache
+G:\NET-WEB-Technology\EmployeeRepository\obj\Debug\EmployeeRepository.csproj.CoreCompileInputs.cache
+G:\NET-WEB-Technology\EmployeeRepository\obj\Debug\EmployeeRepository.csproj.CopyComplete
+G:\NET-WEB-Technology\EmployeeRepository\obj\Debug\EmployeeRepository.dll
+G:\NET-WEB-Technology\EmployeeRepository\obj\Debug\EmployeeRepository.pdb

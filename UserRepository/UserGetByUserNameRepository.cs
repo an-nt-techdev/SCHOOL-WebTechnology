@@ -7,15 +7,19 @@ using System.Threading.Tasks;
 
 namespace Repository
 {
-    public class UserSearchRepository: Connection
+    public class UserGetByUserNameRepository : Connection
     {
+        public string Username { get; set; }
+
         public List<dynamic> Execute()
         {
             using (var cmd = new Query())
             {
-                cmd.QueryString = "SELECT * FROM [User]";
+                cmd.QueryString = "SELECT * FROM [User] WHERE [User].Username='"+Username+"'";
+                
                 return cmd.ExecuteQuery();
             }
         }
+
     }
 }

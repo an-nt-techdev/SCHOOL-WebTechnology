@@ -196,6 +196,7 @@
     <Compile Include="Models\Sale\SaleItemExecuteSaveAction.cs" />
     <Compile Include="Models\Sale\SaleListAction.cs" />
     <Compile Include="Models\Sale\SaleViewAction.cs" />
+    <Compile Include="Models\User\UserInputAction.cs" />
     <Compile Include="Models\User\UserListAction.cs" />
     <Compile Include="Models\Vender\VenderInputAction.cs" />
     <Compile Include="Models\Vender\VenderListAction.cs" />
@@ -915,6 +916,7 @@
     <Content Include="Views\Sale\SaleChart.cshtml" />
     <Content Include="Views\Product\PrintBarCode.cshtml" />
     <Content Include="Views\User\UserList.cshtml" />
+    <Content Include="Views\User\UserInput.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="assets\bootstrap-switch\examples\" />
