@@ -42,10 +42,9 @@
                         <table class="table table-advance" id="table1">
                             <thead>
                                 <tr>
-                                    <th>Mã Nhân Viên</th>
                                     <th>User Name</th>
                                     <th>PassWord(MD5)</th>
-                                    <th>Email</th>
+                                    <th>Mã Nhân Viên</th>
                                     <th>Đăng Nhập Lần Cuối</th>
                                     <th>Hành Động</th>
                                 </tr>
@@ -57,15 +56,16 @@
                                     else
                                     {
                                 <tr class="table-flag-blue">
-                                    <td>@item.EmployeeId</td>
                                     <td>@item.Username</td>
-                                    <td>@item.Password</td>
-                                    <td>@item.Email</td>
+                                    <td>
+                                        @item.Password
+                                    </td>
+                                    <td>@item.EmployeeId</td>
                                     <td>@item.LastLogin</td>
 
                                     <td>
                                         <a title="Sửa" href="#" onclick='btnEdit("@item.Username");' type="button" class="btn btn-default btn-sm"><span class="fa fa-pencil-square-o"></span></a>
-                                        <a title="Xóa" href="#" onclick='btnDelete("@item.Username"); return false;' type="button" class="btn btn-default btn-sm"><span class="fa fa-trash-o"></span></a>
+                                        <a title="Xóa" href="#" onclick="btnDelete('@item.Username'); return false;" type="button" class="btn btn-default btn-sm"><span class="fa fa-trash-o"></span></a>
                                         @if (this.ViewBag.isPopup)
                                         {
                                             <a title="Chọn" href="#" onclick='window.opener.AddData("@item.Username",@item.EmployeeId);window.close();' type="button" class="btn btn-default btn-sm"><span class="fa fa-check"></span></a>
@@ -94,7 +94,7 @@
 <script>
     function btnDelete(username) {
             swal({
-            title: 'Bạn có chắc chắn muốn xóa, #'+id+' ?',
+            title: 'Bạn có chắc chắn muốn xóa, #'+username+' ?',
             text: "Sau khi xóa không thể khôi phục lại dữ liệu!",
             type: 'warning',
             showCancelButton: true,
@@ -105,7 +105,7 @@
             }).then((result) => {
         if (result.value) {
                 $.post(
-                    "/Customer/CustomerExecuteDeleteById",
+                    "/User/UserExecuteDeleteByUsername",
                     {
             CommandAction: {
                 Username : username

@@ -21,5 +21,35 @@ namespace QuanLyBanHang.Controllers
             this.ViewBag.Result = CommandAction.Execute();
             return View();
         }
+        [HttpPost]
+        public ActionResult UserExecuteSave(UserExecuteSaveAction CommandAction)
+        {
+            try
+            {
+                return JsonExpando(Success(CommandAction.Execute()));
+
+            }
+            catch (Exception ex)
+            {
+
+                return JsonExpando(Success(false, ex.Message));
+
+            }
+        }
+        [HttpPost]
+        public ActionResult UserExecuteDeleteByUsername(UsernameExecuteDeleteByUsernameAction CommandAction)
+        {
+            try
+            {
+                return JsonExpando(Success(CommandAction.Execute(), "Xóa thành công!"));
+
+            }
+            catch (Exception ex)
+            {
+
+                return JsonExpando(Success(false, ex.Message));
+
+            }
+        }
     }
 }
