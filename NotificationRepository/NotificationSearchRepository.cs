@@ -13,7 +13,7 @@ namespace Repository
         {
             using(var cmd = new Query())
             {
-                cmd.QueryString = "SELECT [dbo][Notification].*, [dbo][Sale].* FROM [dbo][Notification] LEFT JOIN [dbo][Sale] on [dbo][Sale].SaleId = [dbo][Notification].SaleId";
+                cmd.QueryString = "SELECT [Notification].*, [Sale].* FROM [Notification] LEFT JOIN [Sale] on [Sale].SaleId = [Notification].SaleId";
                 return cmd.ExecuteQuery();
             }
         }

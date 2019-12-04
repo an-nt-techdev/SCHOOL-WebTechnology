@@ -135,57 +135,53 @@
                     <li class="hidden-xs">
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <i class="fa fa-bell"></i>
-                            <span class="badge badge-important">5</span>
+                            <span class="badge badge-important">@this.ViewBag.Notification.Count</span>
                         </a>
 
                         <!-- BEGIN Notifications Dropdown -->
                         <ul class="dropdown-navbar dropdown-menu">
                             <li class="nav-header">
                                 <i class="fa fa-warning"></i>
-                                @(this.ViewBag.CountNoti) Notifications
+                                @this.ViewBag.Notification.Count notification
                             </li>
+
+                    @foreach (var item in this.ViewBag.Noti) {
+                        if (item. ) {
+                            
 
                             <li class="notify">
                                 <a href="#">
                                     <i class="fa fa-comment orange"></i>
-                                    <p>New Comments</p>
-                                    <span class="badge badge-warning">4</span>
+                                    <p>Đơn hàng 145 chưa được xử lý</p>
+                                    @*<span class="badge badge-warning">4</span>*@
                                 </a>
                             </li>
+
+                            } else if (item.Status == 2) {
 
                             <li class="notify">
                                 <a href="#">
                                     <i class="fa fa-twitter blue"></i>
-                                    <p>New Twitter followers</p>
-                                    <span class="badge badge-info">7</span>
+                                    <p>Đơn hàng 111 đang giao hàng</p>
+                                    @*<span class="badge badge-info">7</span>*@
                                 </a>
                             </li>
 
-                            <li class="notify">
-                                <a href="#">
-                                    <img src="/img/demo/avatar/avatar2.jpg" alt="Alex" />
-                                    <p>David would like to become moderator.</p>
-                                </a>
-                            </li>
-
-                            <li class="notify">
-                                <a href="#">
-                                    <i class="fa fa-bug pink"></i>
-                                    <p>New bug in program!</p>
-                                </a>
-                            </li>
+                            } else {
 
                             <li class="notify">
                                 <a href="#">
                                     <i class="fa fa-shopping-cart green"></i>
-                                    <p>You have some new orders</p>
-                                    <span class="badge badge-success">+10</span>
+                                    <p>Đơn hàng 123 đã hoàn thành</p>
+                                    @*<span class="badge badge-success">+10</span>*@
                                 </a>
                             </li>
 
-                            <li class="more">
+                            } }
+
+                            @*<li class="more">
                                 <a href="#">See all notifications</a>
-                            </li>
+                            </li>*@
                         </ul>
                         <!-- END Notifications Dropdown -->
                     </li>
