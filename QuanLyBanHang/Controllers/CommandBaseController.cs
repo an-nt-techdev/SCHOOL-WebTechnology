@@ -1,4 +1,6 @@
 ﻿using Newtonsoft.Json;
+using QuanLyBanHang.Models;
+using Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,6 +31,15 @@ namespace QuanLyBanHang.Controllers
                 IsSuccess = b,
                 Message = Mes
             };
+        }
+        public CommandBaseController()
+        {
+            using (var cmd = new NotificationSearchRepository())
+            {
+                ViewBag.Notification = cmd.Execute();
+            }
+            NotificationListAction CommandAction = new NotificationListAction();
+                ViewBag.Noti = CommandAction.Execute();
         }
     }
 }

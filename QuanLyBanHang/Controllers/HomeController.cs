@@ -29,17 +29,6 @@ namespace QuanLyBanHang.Controllers
             {
                 this.ViewBag.Employee = cmd.Execute();
             }
-            using (var cmd = new NotificationSearchRepository())
-            {
-                this.ViewBag.Notification = cmd.Execute();
-                //int c = 0;
-                //foreach (var item in this.ViewBag.Notification)
-                //{
-                //    if (item.Status.Equals("1")) c++;
-                //}
-                //this.ViewBag.CountNoti = c;
-            }
-            this.ViewBag.Noti = CommandAction.Execute();
             this.ViewBag.isPopup = isPopup;
             return View();
         }

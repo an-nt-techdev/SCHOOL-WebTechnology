@@ -59,7 +59,8 @@
 </head>
 
 <body>
-    <script> var ViewBag = @Html.Raw(Json.Encode(this.ViewBag));</script>
+    <script> var ViewBag = @Html.Raw(Json.Encode(this.ViewBag));
+        </script>
     <div style="text-align:center;"><img id="loading" src="~/img/loading.gif"></div>
     <div id="content-body">
         <div id="theme-setting">
