@@ -126,10 +126,10 @@
                     FLATY Admin
                 </small>
             </a>
-                <!-- BEGIN Navbar Buttons -->
+            <!-- BEGIN Navbar Buttons -->
             <ul class="nav flaty-nav pull-right">
                 <!-- BEGIN Button Tasks -->
-                @if ( this.Session["User"]!=null&&this.Session["User"].Equals("admin"))
+                @if (this.Session["User"] != null && this.Session["User"].Equals("admin"))
                 {
                     <!-- BEGIN Button Notifications -->
                     <li class="hidden-xs">
@@ -191,81 +191,81 @@
                     </li>
                     <!-- END Button Notifications -->
                 }
-                    <!-- END Button Messages -->
-                    <!-- BEGIN Button User -->
-                    <li class="user-profile">
-                        <a data-toggle="dropdown" href="#" class="user-menu dropdown-toggle">
-                            <img class="nav-user-photo" src='@this.Session["Photo"]' alt="Penny's ifoto" />
-                            <span class="hhh" id="user_info">
-                                @this.Session["User"]
-                            </span>
-                            <i class="fa fa-caret-down"></i>
-                        </a>
+                <!-- END Button Messages -->
+                <!-- BEGIN Button User -->
+                <li class="user-profile">
+                    <a data-toggle="dropdown" href="#" class="user-menu dropdown-toggle">
+                        <img class="nav-user-photo" src='@this.Session["Photo"]' alt="Penny's ifoto" />
+                        <span class="hhh" id="user_info">
+                            @this.Session["User"]
+                        </span>
+                        <i class="fa fa-caret-down"></i>
+                    </a>
 
-                        <!-- BEGIN User Dropdown -->
-                        <ul class="dropdown-menu dropdown-navbar" id="user_menu">
-                            <li class="nav-header">
-                                Đăng nhập lúc @Convert.ToDateTime(this.Session["LastLogin"]).ToString("dd/MM/yy hh:mm:ss")
-                            </li>
+                    <!-- BEGIN User Dropdown -->
+                    <ul class="dropdown-menu dropdown-navbar" id="user_menu">
+                        <li class="nav-header">
+                            Đăng nhập lúc @Convert.ToDateTime(this.Session["LastLogin"]).ToString("dd/MM/yy hh:mm:ss")
+                        </li>
 
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-cog"></i>
-                                    Account Settings
-                                </a>
-                            </li>
+                        <li>
+                            <a href="#" onclick="btnEdit1('@this.Session["User"]')">
+                                <i class="fa fa-cog"></i>
+                                Đổi Mật Khẩu
+                            </a>
+                        </li>
 
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-user"></i>
-                                    Edit Profile
-                                </a>
-                            </li>
+                        <li>
+                            <a href="#" onclick="btnEdit2('@this.Session["EmployeeIdd"]')">
+                                <i class="fa fa-user"></i>
+                                Edit Profile
+                            </a>
+                        </li>
 
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-question"></i>
-                                    Help
-                                </a>
-                            </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-question"></i>
+                                Help
+                            </a>
+                        </li>
 
-                            <li class="divider visible-xs"></li>
+                        <li class="divider visible-xs"></li>
 
-                            <li class="visible-xs">
-                                <a href="#">
-                                    <i class="fa fa-tasks"></i>
-                                    Tasks
-                                    <span class="badge badge-warning">4</span>
-                                </a>
-                            </li>
-                            <li class="visible-xs">
-                                <a href="#">
-                                    <i class="fa fa-bell"></i>
-                                    Notifications
-                                    <span class="badge badge-important">8</span>
-                                </a>
-                            </li>
-                            <li class="visible-xs">
-                                <a href="#">
-                                    <i class="fa fa-envelope"></i>
-                                    Messages
-                                    <span class="badge badge-success">5</span>
-                                </a>
-                            </li>
+                        <li class="visible-xs">
+                            <a href="#">
+                                <i class="fa fa-tasks"></i>
+                                Tasks
+                                <span class="badge badge-warning">4</span>
+                            </a>
+                        </li>
+                        <li class="visible-xs">
+                            <a href="#">
+                                <i class="fa fa-bell"></i>
+                                Notifications
+                                <span class="badge badge-important">8</span>
+                            </a>
+                        </li>
+                        <li class="visible-xs">
+                            <a href="#">
+                                <i class="fa fa-envelope"></i>
+                                Messages
+                                <span class="badge badge-success">5</span>
+                            </a>
+                        </li>
 
-                            <li class="divider"></li>
+                        <li class="divider"></li>
 
-                            <li>
-                                <a href="#" onclick="btnLogout();">
-                                    <i class="fa fa-sign-out"></i>
-                                    Đăng xuất
-                                </a>
-                            </li>
-                        </ul>
-                        <!-- BEGIN User Dropdown -->
-                    </li>
-                    <!-- END Button User -->
-                </ul>
+                        <li>
+                            <a href="#" onclick="btnLogout();">
+                                <i class="fa fa-sign-out"></i>
+                                Đăng xuất
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- BEGIN User Dropdown -->
+                </li>
+                <!-- END Button User -->
+            </ul>
             <!-- END Navbar Buttons -->
         </div>
         <!-- END Navbar -->
@@ -301,7 +301,7 @@
                         <!-- BEGIN Submenu -->
                         <ul class="submenu">
                             <li id="SaleList"><a href="/Sale/SaleList">Đơn hàng</a></li>
-                            @if (this.Session["User"]!=null&&this.Session["User"].Equals("admin"))
+                            @if (this.Session["User"] != null && this.Session["User"].Equals("admin"))
                             {
                                 <li id="SaleChart"><a href="/Sale/SaleChart">Biểu đồ thống kê</a></li>;
                             }
@@ -310,7 +310,7 @@
                         </ul>
                         <!-- END Submenu -->
                     </li>
-                    @if (this.Session["User"]!=null&&this.Session["User"].Equals("admin"))
+                    @if (this.Session["User"] != null && this.Session["User"].Equals("admin"))
                     {
                         <li id="EmployeeList">
                             <a href="/Employee/EmployeeList">
@@ -325,7 +325,7 @@
                             <span>Khách hàng</span>
                         </a>
                     </li>
-                    @if (this.Session["User"]!=null&&this.Session["User"].Equals("admin"))
+                    @if (this.Session["User"] != null && this.Session["User"].Equals("admin"))
                     {
                         <li id="VenderList">
                             <a href="/Vender/VenderList">
@@ -392,9 +392,19 @@
     <!-- END Container -->
     <!--basic scripts-->
     <style>
-        
-        
     </style>
+    <script>
+        function btnEdit1(username) {
+            openPopup({
+                url: "/User/UserInput?CommandAction.Username=" + username
+            });
+        }
+        function btnEdit2(employeeid) {
+            openPopup({
+                url: "/Employee/EmployeeInput?CommandAction.EmployeeId=" + employeeid
+            });
+        }
+    </script>
     <script>window.jQuery || document.write('<script src="assets/jquery/jquery-2.1.1.min.js"><\/script>')</script>
     <script src="~/assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="~/assets/jquery-slimscroll/jquery.slimscroll.min.js"></script>

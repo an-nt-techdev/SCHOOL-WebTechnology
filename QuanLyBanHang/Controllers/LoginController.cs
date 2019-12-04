@@ -27,6 +27,7 @@ namespace QuanLyBanHang.Controllers
                 {
                     this.Session["User"] = CommandAction.Username;
                     this.Session["EmployeeName"] = result[0].EmployeeName;
+                    this.Session["EmployeeIdd"] = result[0].EmployeeId;
                     this.Session["LastLogin"] = DateTime.Now.ToString("yyyy-MM-dd hh:mm:ss");
                     if (this.Session["User"].Equals("admin"))
                     {
