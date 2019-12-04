@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Repository
 {
-    class NotificationSearchRepository : Connection
+    public class NotificationSearchRepository : Connection
     {
         public List<dynamic> Execute()
         {

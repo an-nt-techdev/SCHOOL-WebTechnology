@@ -741,3 +741,7 @@ D:\CN-WEB-NET\NET-WEB-Technology\QuanLyBanHang\bin\UserRepository.dll
 D:\CN-WEB-NET\NET-WEB-Technology\QuanLyBanHang\bin\UserRepository.pdb
 D:\CN-WEB-NET\NET-WEB-Technology\QuanLyBanHang\bin\UserBussiness.dll
 D:\CN-WEB-NET\NET-WEB-Technology\QuanLyBanHang\bin\UserBussiness.pdb
+D:\CN-WEB-NET\NET-WEB-Technology\QuanLyBanHang\bin\NotificationRepository.dll
+D:\CN-WEB-NET\NET-WEB-Technology\QuanLyBanHang\bin\Notification.dll
+D:\CN-WEB-NET\NET-WEB-Technology\QuanLyBanHang\bin\NotificationRepository.pdb
+D:\CN-WEB-NET\NET-WEB-Technology\QuanLyBanHang\bin\Notification.pdb

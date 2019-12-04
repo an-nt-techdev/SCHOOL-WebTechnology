@@ -179,6 +179,7 @@
     <Compile Include="Models\Login\LoginExecuteSearchAction.cs" />
     <Compile Include="Models\Login\OAuthAction.cs" />
     <Compile Include="Models\Login\OAuthUpdateAction.cs" />
+    <Compile Include="Models\Notification\NotificationListAction.cs" />
     <Compile Include="Models\ProductGroup\ProductGroupExecuteDeleteByIdAction.cs" />
     <Compile Include="Models\ProductGroup\ProductGroupExecuteSaveAction.cs" />
     <Compile Include="Models\ProductGroup\ProductGroupInputAction.cs" />
@@ -971,6 +972,10 @@
     <ProjectReference Include="..\Login\LoginRepository.csproj">
       <Project>{21cf07c0-3ada-4e00-a9f2-9ee819293910}</Project>
       <Name>LoginRepository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NotificationRepository\NotificationRepository.csproj">
+      <Project>{002EC0D6-3884-47B0-8159-5C899FD9C0F6}</Project>
+      <Name>NotificationRepository</Name>
     </ProjectReference>
     <ProjectReference Include="..\ProductBusiness\ProductBusiness.csproj">
       <Project>{6e1b65d4-bda0-458e-9a90-c7f4ab03de62}</Project>

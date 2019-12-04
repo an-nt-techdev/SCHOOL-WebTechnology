@@ -12,7 +12,7 @@ namespace QuanLyBanHang.Controllers
     {
         public ActionResult Index()
         {
-            Console.Write("cec");
+            
             using(var cmd = new SaleSearchRepository())
             {
                 this.ViewBag.Sale = cmd.Execute();
@@ -28,6 +28,16 @@ namespace QuanLyBanHang.Controllers
             using (var cmd = new EmployeeSearchRepository())
             {
                 this.ViewBag.Employee = cmd.Execute();
+            }
+            using (var cmd = new NotificationSearchRepository())
+            {
+                this.ViewBag.Notification = cmd.Execute();
+                //int c = 0;
+                //foreach (var item in this.ViewBag.Notification)
+                //{
+                //    if (item.Status.Equals("1")) c++;
+                //}
+                //this.ViewBag.CountNoti = c;
             }
             return View();
         }
