@@ -216,7 +216,7 @@
                         </li>
 
                         <li>
-                            <a href="#">
+                            <a href="#" onclick="btnEdit2('@this.Session["EmployeeIdd"]')">
                                 <i class="fa fa-user"></i>
                                 Edit Profile
                             </a>
@@ -397,6 +397,11 @@
         function btnEdit1(username) {
             openPopup({
                 url: "/User/UserInput?CommandAction.Username=" + username
+            });
+        }
+        function btnEdit2(employeeid) {
+            openPopup({
+                url: "/Employee/EmployeeInput?CommandAction.EmployeeId=" + employeeid
             });
         }
     </script>
