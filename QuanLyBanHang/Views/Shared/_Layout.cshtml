@@ -145,9 +145,10 @@
                                 @this.ViewBag.Notification.Count notification
                             </li>
 
-                    @foreach (var item in this.ViewBag.Noti) {
-                        if (item. ) {
-                            
+                    @foreach (var item in this.ViewBag.Noti)
+                    {
+                        //if (item.Status == 1) {
+
 
                             <li class="notify">
                                 <a href="#">
@@ -157,7 +158,7 @@
                                 </a>
                             </li>
 
-                            } else if (item.Status == 2) {
+                        //} else if (item.Status == 2) {
 
                             <li class="notify">
                                 <a href="#">
@@ -167,7 +168,7 @@
                                 </a>
                             </li>
 
-                            } else {
+                        //} else {
 
                             <li class="notify">
                                 <a href="#">
@@ -177,8 +178,8 @@
                                 </a>
                             </li>
 
-                            } }
-
+                        //} }
+                    }
                             @*<li class="more">
                                 <a href="#">See all notifications</a>
                             </li>*@
