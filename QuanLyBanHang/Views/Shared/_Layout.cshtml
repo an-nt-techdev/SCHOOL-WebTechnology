@@ -209,10 +209,20 @@
                             </li>
 
                             <li>
-                                <a href="#">
-                                    <i class="fa fa-cog"></i>
-                                    Account Settings
-                                </a>
+                                @if (this.Session["User"] != null)
+                                {
+                                    <a href="#" onclick='btnEdit("@this.Session["User"]")'>
+                                        <i class="fa fa-cog"></i>
+                                        Đổi Mật Khẩu
+                                    </a>
+                                }
+                                else
+                                {
+                                    <a href="#" onclick="">
+                                        <i class="fa fa-cog"></i>
+                                        Đổi Mật Khẩu
+                                    </a>
+                                }
                             </li>
 
                             <li>
@@ -395,6 +405,13 @@
         
         
     </style>
+    <script>
+        function btnEdit(username) {
+            this.openPopup({
+                url: "/User/UserInput?CommandAction.Username=" + username
+            });
+        }
+    </script>
     <script>window.jQuery || document.write('<script src="assets/jquery/jquery-2.1.1.min.js"><\/script>')</script>
     <script src="~/assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="~/assets/jquery-slimscroll/jquery.slimscroll.min.js"></script>
