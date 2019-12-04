@@ -2,6 +2,7 @@
 @{
     ViewBag.Title = "SaleChart";
     Layout = "~/Views/Shared/_Layout.cshtml";
+
 }
 
 <div id="main-content">
@@ -37,7 +38,7 @@
                     </div>
                 </div>
                 <div class="box-content">
-                    <div id="chart_div"></div>
+                    <div id="chart_divv"></div>
 
                 </div>
             </div>
@@ -70,6 +71,44 @@
     <a id="btn-scrollup" class="btn btn-circle btn-lg" href="#"><i class="fa fa-chevron-up"></i></a>
 </div>
 <!-- END Content -->
+<script>
+    google.charts.load('current', { 'packages': ['corechart'] });
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
 
-<script src="~/Scripts/Chart.js"></script>
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        var json = JSON.parse(this.ViewBag.Result.Content);
+        var StatusDone = 0;
+        var StatusUnDone = 0;
+        var StatusDoing = 0;
+        $.each(json, function (k, v) {
+            if (v.Status == 1) {
+                StatusDone++;
+            }
+            else if (v.Status == 0) {
+                StatusUnDone++;
+            }
+
+            else StatusDoing++;
+
+        });
+        data.addRows([
+            ['Đã hoàn thành', StatusDone],
+            ['Chưa xử lý', StatusUnDone],
+            ['Đang Giao Hàng', StatusDoing]
+        ]);
+
+        // Set chart options
+        var options = {
+           
+        };
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.PieChart(document.getElementById('chart_divv'));
+        chart.draw(data, options);
+    }
+</script>
 <script src="~/Scripts/Column_Chart.js"></script>
