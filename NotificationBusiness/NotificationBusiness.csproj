@@ -7,11 +7,12 @@
     <ProjectGuid>{A5BB0DC4-2A12-424D-9BEC-356209A438C7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>NotificationBusiness</RootNamespace>
-    <AssemblyName>NotificationBusiness</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <RootNamespace>NotificationExcuteSaveBusiness</RootNamespace>
+    <AssemblyName>NotificationExcuteSaveBusiness</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -29,6 +31,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -48,6 +51,14 @@
     <ProjectReference Include="..\ConnectDataBase\ConnectDataBase.csproj">
       <Project>{FE0EC3D0-443E-4E28-80DE-FE771E75A5EC}</Project>
       <Name>ConnectDataBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EmployeeRepository\EmployeeRepository.csproj">
+      <Project>{2AE65DCF-8AD6-47F7-827C-5259AD06F8B7}</Project>
+      <Name>EmployeeRepository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Notification\Notification.csproj">
+      <Project>{06D9C4DA-8630-46C6-9B39-B4717BCD080D}</Project>
+      <Name>Notification</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

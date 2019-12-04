@@ -15,7 +15,7 @@ namespace Repository
         {
             using(var cmd = new Query())
             {
-                cmd.QueryString = "INSERT INTO [dbo].[ProductGroup]([ProductGroupId] ,[ProductId] ,[ProductGroupName] ,[Remark]) VALUES ((SELECT isnull(MAX(ProductGroupId),0) + 1 from [ProductGroup])," + 1 + ",N'" + Item.ProductGroupName + "','" + Item.Remark + "')";
+                cmd.QueryString = "INSERT INTO [dbo].[ProductGroup]([ProductGroupId] ,[ProductGroupName] ,[Remark]) VALUES ((SELECT isnull(MAX(ProductGroupId),0) + 1 from [ProductGroup])," + ",N'" + Item.ProductGroupName + "','" + Item.Remark + "')";
                 return cmd.ExecuteQueryNonReader();
             }
         }
