@@ -4,15 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A5BB0DC4-2A12-424D-9BEC-356209A438C7}</ProjectGuid>
+    <ProjectGuid>{644A1650-A071-47F8-B618-3A51CB9A50E1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>NotificationExcuteSaveBusiness</RootNamespace>
-    <AssemblyName>NotificationExcuteSaveBusiness</AssemblyName>
+    <RootNamespace>NotificationBusiness</RootNamespace>
+    <AssemblyName>NotificationBusiness</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -22,7 +21,6 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -31,7 +29,6 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -44,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NotificationExcuteSaveBusiness.cs" />
+    <Compile Include="NotificationExecuteSaveBusiness.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -52,9 +49,9 @@
       <Project>{FE0EC3D0-443E-4E28-80DE-FE771E75A5EC}</Project>
       <Name>ConnectDataBase</Name>
     </ProjectReference>
-    <ProjectReference Include="..\EmployeeRepository\EmployeeRepository.csproj">
-      <Project>{2AE65DCF-8AD6-47F7-827C-5259AD06F8B7}</Project>
-      <Name>EmployeeRepository</Name>
+    <ProjectReference Include="..\NotificationRepository\NotificationRepository.csproj">
+      <Project>{002EC0D6-3884-47B0-8159-5C899FD9C0F6}</Project>
+      <Name>NotificationRepository</Name>
     </ProjectReference>
     <ProjectReference Include="..\Notification\Notification.csproj">
       <Project>{06D9C4DA-8630-46C6-9B39-B4717BCD080D}</Project>
