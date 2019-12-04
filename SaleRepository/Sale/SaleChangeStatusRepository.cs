@@ -10,11 +10,19 @@ namespace Repository
     public class SaleChangeStatusRepository : Connection
     {
         public int SaleId { get; set; }
+        public int Salest { get; set; }
         public bool Execute()
         {
             using(var cmd = new Query())
             {
-                cmd.QueryString = "UPDATE [dbo].[Sale] SET [Status] = 1 WHERE [Sale].SaleId=" + this.SaleId;
+                if (this.Salest == 2)
+                {
+                    cmd.QueryString = "UPDATE [dbo].[Sale] SET [Status] = 2 WHERE [Sale].SaleId=" + this.SaleId;
+                }
+                else
+                {
+                    cmd.QueryString = "UPDATE [dbo].[Sale] SET [Status] = 1 WHERE [Sale].SaleId=" + this.SaleId;
+                }
                 return cmd.ExecuteQueryNonReader();
             }
         }
