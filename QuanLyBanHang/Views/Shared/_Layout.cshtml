@@ -148,38 +148,38 @@
 
                     @foreach (var item in this.ViewBag.Noti)
                     {
-                        //if (item.Status == 1) {
+                        if (item.Status==0) {
 
 
                             <li class="notify">
                                 <a href="#">
                                     <i class="fa fa-comment orange"></i>
-                                    <p>Đơn hàng 145 chưa được xử lý</p>
+                                    <p>Đơn hàng @item.SaleId chưa được xử lý</p>
                                     @*<span class="badge badge-warning">4</span>*@
                                 </a>
                             </li>
 
-                        //} else if (item.Status == 2) {
+                        } else if (item.Status == 2) {
 
                             <li class="notify">
                                 <a href="#">
                                     <i class="fa fa-twitter blue"></i>
-                                    <p>Đơn hàng 111 đang giao hàng</p>
+                                    <p>Đơn hàng @item.SaleId đang giao hàng</p>
                                     @*<span class="badge badge-info">7</span>*@
                                 </a>
                             </li>
 
-                        //} else {
+                        } else {
 
                             <li class="notify">
                                 <a href="#">
                                     <i class="fa fa-shopping-cart green"></i>
-                                    <p>Đơn hàng 123 đã hoàn thành</p>
+                                    <p>Đơn hàng @item.SaleId đã hoàn thành</p>
                                     @*<span class="badge badge-success">+10</span>*@
                                 </a>
                             </li>
 
-                        //} }
+                        }
                     }
                             @*<li class="more">
                                 <a href="#">See all notifications</a>
