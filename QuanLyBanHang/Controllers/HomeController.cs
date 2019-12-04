@@ -10,7 +10,7 @@ namespace QuanLyBanHang.Controllers
 {
     public class HomeController : CommandBaseController
     {
-        public ActionResult Index(NotificationListAction CommandAction, bool isPopup = false)
+        public ActionResult Index()
         {
             
             using(var cmd = new SaleSearchRepository())
@@ -39,8 +39,6 @@ namespace QuanLyBanHang.Controllers
                 //}
                 //this.ViewBag.CountNoti = c;
             }
-            this.ViewBag.Noti = CommandAction.Execute();
-            this.ViewBag.isPopup = isPopup;
             return View();
         }
         
