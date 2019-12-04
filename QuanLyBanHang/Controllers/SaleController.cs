@@ -19,11 +19,11 @@ namespace QuanLyBanHang.Controllers
             var result = CommandAction.Execute();
             foreach (var item in result)
             {
-                if(item.Status != 0)
+                if(item.Status == 0)
                 {
                     item.StatusShow = "Chưa xử lý";
                 }
-                else if(item.Status != 1 )
+                else if(item.Status == 1 )
                 {
                     item.StatusShow = "Đã hoàn thành";
                 }
