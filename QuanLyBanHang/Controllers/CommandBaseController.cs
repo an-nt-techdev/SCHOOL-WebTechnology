@@ -44,13 +44,10 @@ namespace QuanLyBanHang.Controllers
             try
             {
                 return JsonExpando(Success(CommandAction.Execute()));
-
             }
             catch (Exception ex)
             {
-
                 return JsonExpando(Success(false, ex.Message));
-
             }
         }
     }

@@ -38,12 +38,12 @@
                         </div>
                         <div class="btn-group">
                             <a class="btn btn-circle show-tooltip" onclick="SalePrintPDF();" title="In PDF" href="#"><i class="fa fa-file-pdf-o"></i></a>
-                            <a class="btn btn-circle show-tooltip" title="Export to PDF" href="#"><i class="fa fa-file-text-o"></i></a>
-                            <a class="btn btn-circle show-tooltip" title="Export to Exel" href="#"><i class="fa fa-table"></i></a>
+                            @*<a class="btn btn-circle show-tooltip" title="Export to PDF" href="#"><i class="fa fa-file-text-o"></i></a>
+                            <a class="btn btn-circle show-tooltip" title="Export to Exel" href="#"><i class="fa fa-table"></i></a>*@
                         </div>
-                        <div class="btn-group">
+                        @*<div class="btn-group">
                             <a class="btn btn-circle show-tooltip" title="Refresh" href="#"><i class="fa fa-repeat"></i></a>
-                        </div>
+                        </div>*@
                     </div>
                     <br /><br />
                     <div class="clearfix"></div>
@@ -52,7 +52,7 @@
                             <thead>
                                 <tr>
                                     <th>Mã</th>
-                                    <th>Ngày</th>
+                                    <th>Ngày tạo đơn</th>
                                     <th>Khách hàng</th>
                                     <th>Nhân viên bán hàng</th>
                                     <th>Số lượng</th>
@@ -81,15 +81,35 @@
                                         <td>@item.StatusShow</td>
                                         <td>@item.Note</td>
                                         <td>
-                                            <a title="Xem" href="#" onclick="btnView(@item.SaleId);" type="button" class="btn btn-default btn-sm"><span class="fa fa-eye"></span></a>
-                                            <a title="Sửa" href="#" onclick="btnEdit(@item.SaleId);" type="button" class="btn btn-default btn-sm"><span class="fa fa-pencil-square-o"></span></a>
-                                            @if (this.Session["User"].Equals("admin"))
+                                            @if (item.Status == 0)
                                             {
-                                                <a title="Xóa" href="#" onclick="btnDelete(@item.SaleId); return false;" type="button" class="btn btn-gray btn-sm"><span class="fa fa-trash-o"></span></a>
-                                            }
+                                                <a title="Xem" href="#" onclick="btnView(@item.SaleId);" type="button" class="btn btn-default btn-sm"><span class="fa fa-eye"></span></a>
+                                                <a title="Sửa" href="#" onclick="btnEdit(@item.SaleId);" type="button" class="btn btn-default btn-sm"><span class="fa fa-pencil-square-o"></span></a>
+                                                if (this.Session["User"].Equals("admin"))
+                                                {
+                                                    <a title="Xóa" href="#" onclick="btnDelete(@item.SaleId); return false;" type="button" class="btn btn-gray btn-sm"><span class="fa fa-trash-o"></span></a>
+                                                }
                                                 <a title="Giao Hàng" href="#" onclick="changeStatus1(@item.SaleId,2); return false;" type="button" class="btn btn-success btn-sm"><span class="fa fa-shopping-cart"></span></a>
                                                 <a title="Hoàn thành" href="#" onclick="changeStatus1(@item.SaleId,1); return false;" type="button" class="btn btn-primary btn-sm"><span class="fa fa-check-square-o"></span></a>
-                                            </td>
+                                            }
+                                            else if (item.Status == 2)
+                                            {
+                                                <a title="Xem" href="#" onclick="btnView(@item.SaleId);" type="button" class="btn btn-default btn-sm"><span class="fa fa-eye"></span></a>
+                                                if (this.Session["User"].Equals("admin"))
+                                                {
+                                                    <a title="Xóa" href="#" onclick="btnDelete(@item.SaleId); return false;" type="button" class="btn btn-gray btn-sm"><span class="fa fa-trash-o"></span></a>
+                                                }
+                                                <a title="Hoàn thành" href="#" onclick="changeStatus1(@item.SaleId,1); return false;" type="button" class="btn btn-primary btn-sm"><span class="fa fa-check-square-o"></span></a>
+                                            }
+                                            else if (item.Status == 1)
+                                            {
+                                                <a title="Xem" href="#" onclick="btnView(@item.SaleId);" type="button" class="btn btn-default btn-sm"><span class="fa fa-eye"></span></a>
+                                                if (this.Session["User"].Equals("admin"))
+                                                {
+                                                    <a title="Xóa" href="#" onclick="btnDelete(@item.SaleId); return false;" type="button" class="btn btn-gray btn-sm"><span class="fa fa-trash-o"></span></a>
+                                                }
+                                            }
+                                        </td>
                                     </tr>
                                 }
 

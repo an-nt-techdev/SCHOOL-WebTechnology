@@ -30,12 +30,15 @@
                     </div>
                 </div>
                 <div class="box-content">
-                    <div class="btn-toolbar pull-right clearfix">
-                        <div class="btn-group">
-                            <a class="btn btn-circle show-tooltip" onclick="btnAdd(); return false;" title="Thêm" href="#"><i class="fa fa-plus"></i></a>
+                    @if (!this.ViewBag.isPopup)
+                    {
+                        <div class="btn-toolbar pull-right clearfix">
+                            <div class="btn-group">
+                                <a class="btn btn-circle show-tooltip" onclick="btnAdd(); return false;" title="Thêm" href="#"><i class="fa fa-plus"></i></a>
+                            </div>
                         </div>
-                    </div>
-                    <br /><br />
+                        <br /><br />
+                    }
                     <div class="clearfix"></div>
                     <div class="table-responsive" style="border:0">
                         <table class="table table-advance" id="table1">
@@ -46,7 +49,7 @@
                                     <th>Số điện thoại</th>
                                     <th>Email</th>
                                     <th>Hành động</th>
-                                    
+
                                 </tr>
                             </thead>
                             <tbody>
@@ -58,9 +61,13 @@
                                         <td>@item.Phone</td>
                                         <td>@item.Email</td>
                                         <td>
-                                            <a title="Sửa" href="#" onclick="btnEdit(@item.CustomerId);" type="button" class="btn btn-default btn-sm"><span class="fa fa-pencil-square-o"></span></a>
-                                            <a title="Xóa" href="#" onclick="btnDelete(@item.CustomerId); return false;" type="button" class="btn btn-default btn-sm"><span class="fa fa-trash-o"></span></a>
-                                            @if (this.ViewBag.isPopup)
+                                            @if (!this.ViewBag.isPopup)
+                                            {
+                                                <a title="Sửa" href="#" onclick="btnEdit(@item.CustomerId);" type="button" class="btn btn-default btn-sm"><span class="fa fa-pencil-square-o"></span></a>
+                                                <a title="Xóa" href="#" onclick="btnDelete(@item.CustomerId); return false;" type="button" class="btn btn-default btn-sm"><span class="fa fa-trash-o"></span></a>
+                                            }
+                                            else
+                                            if (this.ViewBag.isPopup)
                                             {
                                                 <a title="Chọn" href="#" onclick="window.opener.AddData(@item.CustomerId,'@item.CustomerName');window.close();" type="button" class="btn btn-default btn-sm"><span class="fa fa-check"></span></a>
                                             }

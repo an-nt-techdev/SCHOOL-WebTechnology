@@ -149,7 +149,7 @@ function SalePrintPDF() {
     var json = JSON.stringify(data);
     printJS({
         printable: JSON.parse(json),
-        properties: ['Ngay', 'CustomerName', 'EmployeeName','Qty','Total','Note'],
+        properties: ['SaleDate', 'CustomerName', 'EmployeeName','Qty','Total','Note'],
         type: 'json'
     });
 }

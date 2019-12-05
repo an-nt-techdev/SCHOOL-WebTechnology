@@ -30,12 +30,15 @@
                     </div>
                 </div>
                 <div class="box-content">
-                    <div class="btn-toolbar pull-right clearfix">
-                        <div class="btn-group">
-                            <a class="btn btn-circle show-tooltip" title="Thêm" onclick="btnAdd(); return false;" href="#"><i class="fa fa-plus"></i></a>
+                    @if (!this.ViewBag.isPopup)
+                    {
+                        <div class="btn-toolbar pull-right clearfix">
+                            <div class="btn-group">
+                                <a class="btn btn-circle show-tooltip" title="Thêm" onclick="btnAdd(); return false;" href="#"><i class="fa fa-plus"></i></a>
+                            </div>
                         </div>
-                    </div>
-                    <br /><br />
+                        <br /><br />
+                    }
                     <div class="clearfix"></div>
                     <div class="table-responsive" style="border:0">
                         <table class="table table-advance" id="table1">
@@ -59,9 +62,13 @@
                                         <td>@item.Email</td>
                                         <td>@item.Address</td>
                                         <td>
-                                            <a title="Sửa" href="#" onclick="btnEdit(@item.EmployeeId);" type="button" class="btn btn-default btn-sm"><span class="fa fa-pencil-square-o"></span></a>
-                                            <a title="Xóa" href="#" onclick="btnDelete(@item.EmployeeId); return false;" type="button" class="btn btn-default btn-sm"><span class="fa fa-trash-o"></span></a>
-                                            @if (this.ViewBag.isPopup)
+                                            @if (!this.ViewBag.isPopup)
+                                            {
+                                                <a title="Sửa" href="#" onclick="btnEdit(@item.EmployeeId);" type="button" class="btn btn-default btn-sm"><span class="fa fa-pencil-square-o"></span></a>
+                                                <a title="Xóa" href="#" onclick="btnDelete(@item.EmployeeId); return false;" type="button" class="btn btn-default btn-sm"><span class="fa fa-trash-o"></span></a>
+                                            }
+                                            else
+                                            if (this.ViewBag.isPopup)
                                             {
                                                 <a title="Chọn" href="#" onclick="window.opener.AddDataEmployee(@item.EmployeeId,'@item.EmployeeName');window.close();" type="button" class="btn btn-default btn-sm"><span class="fa fa-check"></span></a>
                                             }

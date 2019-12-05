@@ -148,7 +148,7 @@
                         <ul class="dropdown-navbar dropdown-menu">
                             <li class="nav-header">
                                 <i class="fa fa-warning"></i>
-                                @num notification
+                                @num thông báo
                             </li>
 
                     @foreach (var item in this.ViewBag.Notification)
@@ -160,9 +160,9 @@
 
 
                             <li class="notify">
-                                <a href="#" onclick="btnshow1(@item.SaleId,@item.NotificationId)">
+                                <a href="#" onclick="btnshow1(@item.SaleId,@item.NotificationId)" style="line-height: 26px;">
                                     <i class="fa fa-comment orange"></i>
-                                    <p>Đơn hàng @item.SaleId chưa được xử lý</p>
+                                    <p>Đơn hàng mã số @item.SaleId chưa được xử lý</p>
                                     @*<span class="badge badge-warning">4</span>*@
                                 </a>
                             </li>
@@ -172,9 +172,9 @@
                             {
 
                             <li class="notify">
-                                <a href="#" onclick="btnshow1(@item.SaleId,@item.NotificationId)">
+                                <a href="#" onclick="btnshow1(@item.SaleId,@item.NotificationId)" style="line-height: 26px;">
                                     <i class="fa fa-twitter blue"></i>
-                                    <p>Đơn hàng @item.SaleId đang giao hàng</p>
+                                    <p>Đơn hàng mã số @item.SaleId đang giao hàng</p>
                                     @*<span class="badge badge-info">7</span>*@
                                 </a>
                             </li>
@@ -184,9 +184,9 @@
                             {
 
                             <li class="notify">
-                                <a href="#" onclick="btnshow1(@item.SaleId,@item.NotificationId)">
+                                <a href="#" onclick="btnshow1(@item.SaleId,@item.NotificationId)" style="line-height: 26px;">
                                     <i class="fa fa-shopping-cart green"></i>
-                                    <p>Đơn hàng @item.SaleId đã hoàn thành</p>
+                                    <p>Đơn hàng mã số @item.SaleId đã hoàn thành</p>
                                     @*<span class="badge badge-success">+10</span>*@
                                 </a>
                             </li>

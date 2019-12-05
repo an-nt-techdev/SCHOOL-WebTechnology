@@ -15,7 +15,7 @@ namespace Repository
         {
             using (var cmd = new Query())
             {
-                cmd.QueryString = "INSERT INTO [dbo].[Notification]([NotificationId], [SaleId], [Status]) VALUES ((SELECT isnull(MAX(NotificationId),0) + 1 from [Notification])," + Item.SaleId + "," + Item.Status + " ) ";
+                cmd.QueryString = "INSERT INTO [dbo].[Notification]([NotificationId], [SaleId], [StatusNoti]) VALUES ((SELECT isnull(MAX(NotificationId),0) + 1 from [Notification]), (SELECT isnull(MAX(SaleId),0) from [Sale]), 1) ";
                 return cmd.ExecuteQueryNonReader();
             }
         }

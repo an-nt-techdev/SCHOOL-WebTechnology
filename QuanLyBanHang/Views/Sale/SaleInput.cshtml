@@ -251,6 +251,18 @@ else
                     callback(result);
                 }
             );
+            $.post(
+                    '/CommandBase/NotificationExecuteSave',
+                    {
+                        CommandAction: {
+                            Item: {
+                                Status: 1
+                            },
+                            EditFlag: "IN"
+                        }
+                    },
+                    function (result) {}
+                );
         }
     }
     function AddData(id, name) {
