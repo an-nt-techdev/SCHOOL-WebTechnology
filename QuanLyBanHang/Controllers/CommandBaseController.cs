@@ -34,9 +34,23 @@ namespace QuanLyBanHang.Controllers
         }
         public CommandBaseController()
         {
-            using (var cmd = new NotificationSearchRepository())
+            NotificationListAction cmd = new NotificationListAction();
+            ViewBag.Notification = cmd.Execute();
+         
+        }
+        [HttpPost]
+        public ActionResult NotificationExecuteSave(NotificationExecuteSaveAction CommandAction)
+        {
+            try
             {
-                ViewBag.Notification = cmd.Execute();
+                return JsonExpando(Success(CommandAction.Execute()));
+
+            }
+            catch (Exception ex)
+            {
+
+                return JsonExpando(Success(false, ex.Message));
+
             }
         }
     }
