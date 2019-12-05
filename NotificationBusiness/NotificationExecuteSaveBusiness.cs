@@ -17,9 +17,10 @@ namespace Business
         {
             if (this.EditFlag == "M")
             {
-                using(var cmd = new NotificationUpdateRepository())
+                using(var cmd = new NotificationChangeStatusRepository())
                 {
-                    cmd.Item = this.Item;
+                    cmd.NotificationId = this.Item.NotificationId;
+                    cmd.NotificationStatus = this.Item.Status;
                     return cmd.Execute();
                 }
             }
