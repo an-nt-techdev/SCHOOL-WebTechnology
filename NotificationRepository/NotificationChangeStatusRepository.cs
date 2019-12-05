@@ -15,14 +15,7 @@ namespace Repository
         {
             using (var cmd = new Query())
             {
-                if (this.NotificationStatus == 1)
-                {
-                    cmd.QueryString = "UPDATE [dbo].[Notification] SET [StatusNoti] = 0 WHERE [Notification].NotificationId = " + this.NotificationId;
-                }
-                else
-                {
-                    cmd.QueryString = "UPDATE [dbo].[Notification] SET [StatusNoti] = 1 WHERE [Notification].NotificationId = " + this.NotificationId;
-                }
+                cmd.QueryString = "UPDATE [dbo].[Notification] SET [StatusNoti] = 0 WHERE [Notification].NotificationId = " + this.NotificationId;
                 return cmd.ExecuteQueryNonReader();
             }
         }
