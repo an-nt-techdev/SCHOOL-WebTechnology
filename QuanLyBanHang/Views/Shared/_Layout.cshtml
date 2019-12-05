@@ -146,13 +146,13 @@
                                 @this.ViewBag.Notification.Count notification
                             </li>
 
-                    @foreach (var item in this.ViewBag.Noti)
+                    @foreach (var item in this.ViewBag.Notification)
                     {
                         if (item.Status==0) {
 
 
                             <li class="notify">
-                                <a href="#">
+                                <a href="#" onclick="">
                                     <i class="fa fa-comment orange"></i>
                                     <p>Đơn hàng @item.SaleId chưa được xử lý</p>
                                     @*<span class="badge badge-warning">4</span>*@
