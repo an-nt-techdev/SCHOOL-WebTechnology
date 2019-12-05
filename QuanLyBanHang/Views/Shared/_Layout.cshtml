@@ -160,7 +160,7 @@
 
 
                             <li class="notify">
-                                <a href="#" onclick="btnshow1(@item.SaleId)">
+                                <a href="#" onclick="btnshow1(@item.SaleId,@item.NotificationId)">
                                     <i class="fa fa-comment orange"></i>
                                     <p>Đơn hàng @item.SaleId chưa được xử lý</p>
                                     @*<span class="badge badge-warning">4</span>*@
@@ -172,7 +172,7 @@
                             {
 
                             <li class="notify">
-                                <a href="#" onclick="btnshow1(@item.SaleId)">
+                                <a href="#" onclick="btnshow1(@item.SaleId,@item.NotificationId)">
                                     <i class="fa fa-twitter blue"></i>
                                     <p>Đơn hàng @item.SaleId đang giao hàng</p>
                                     @*<span class="badge badge-info">7</span>*@
@@ -184,7 +184,7 @@
                             {
 
                             <li class="notify">
-                                <a href="#" onclick="btnshow1(@item.SaleId)">
+                                <a href="#" onclick="btnshow1(@item.SaleId,@item.NotificationId)">
                                     <i class="fa fa-shopping-cart green"></i>
                                     <p>Đơn hàng @item.SaleId đã hoàn thành</p>
                                     @*<span class="badge badge-success">+10</span>*@
@@ -415,43 +415,27 @@
                 url: "/Employee/EmployeeInput?CommandAction.EmployeeId=" + employeeid
             });
         }
-        function btnshow1(id) {
+        function btnshow1(id1, id2) {
+            onBtnChangeStatus(id2);
             openPopup({
-                url: '/Sale/SaleView?CommandAction.SaleId=' + id
-            });
-            onBtnChangeStatus(id);
+                url: '/Sale/SaleView?CommandAction.SaleId=' + id1
+            });   
         }
-        function onBtnChangeStatus(id = null) {
-            if (id != null) {
-
-            }
-            var obj = {};
-            $.each($("#validation-form").serializeArray(), function (k, v) {
-                obj[v.name] = v.value;
-            });
-            if (!obj["NotificationId"]) {
-                obj["NotificationId"] = id;
-            }
-            if (id != null) {
-                $.post(
-                    '/CommandBase/NotificationExecuteSave',
-                    {
-                        CommandAction: {
-                            NotificationList: obj,
-                            EditFlag: "M",
-                            StatusNoti: 0
-                        }
-                    },
-                    function (result) {
-                        noti(result.Message);
-                        debugger;
-                        if (result.IsSuccess) {
-                            callback(result);
-                        }
-
+        function onBtnChangeStatus(id) {
+            $.post(
+                "/CommandBase/NotificationExecuteSave",
+                {
+                    CommandAction: {
+                        Item: {
+                            NotificationId: id, 
+                            SaleId: 1,
+                            Status: 0
+                        },
+                        EditFlag:"M"
                     }
-                );
-            }
+                }
+            );
+            alert(id);
         }
     </script>
     <script>window.jQuery || document.write('<script src="assets/jquery/jquery-2.1.1.min.js"><\/script>')</script>
