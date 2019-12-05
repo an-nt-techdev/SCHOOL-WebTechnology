@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="NotificationChangeStatusRepository.cs" />
     <Compile Include="NotificationSearchRepository.cs" />
     <Compile Include="NotificationInsertRepository.cs" />
     <Compile Include="NotificationUpdateRepository.cs" />
