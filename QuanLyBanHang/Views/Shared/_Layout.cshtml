@@ -429,17 +429,16 @@
             $.each($("#validation-form").serializeArray(), function (k, v) {
                 obj[v.name] = v.value;
             });
-            if (!obj["NotificationId"]) {
-                obj["NotificationId"] = id;
-            }
             if (id != null) {
                 $.post(
                     '/CommandBase/NotificationExecuteSave',
                     {
                         CommandAction: {
-                            NotificationList: obj,
-                            EditFlag: "M",
-                            StatusNoti: 0
+                            Item: {
+                                NotificationId: id,
+                                NotificationStatus:0
+                            },
+                            EditFlag: "M"
                         }
                     },
                     function (result) {
