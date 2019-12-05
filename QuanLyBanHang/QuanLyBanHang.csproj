@@ -179,6 +179,8 @@
     <Compile Include="Models\Login\LoginExecuteSearchAction.cs" />
     <Compile Include="Models\Login\OAuthAction.cs" />
     <Compile Include="Models\Login\OAuthUpdateAction.cs" />
+    <Compile Include="Models\Notification\NotificationChangeStatusAction.cs" />
+    <Compile Include="Models\Notification\NotificationExecuteSaveAction.cs" />
     <Compile Include="Models\Notification\NotificationListAction.cs" />
     <Compile Include="Models\ProductGroup\ProductGroupExecuteDeleteByIdAction.cs" />
     <Compile Include="Models\ProductGroup\ProductGroupExecuteSaveAction.cs" />
@@ -973,9 +975,17 @@
       <Project>{21cf07c0-3ada-4e00-a9f2-9ee819293910}</Project>
       <Name>LoginRepository</Name>
     </ProjectReference>
+    <ProjectReference Include="..\NotificationBusiness\NotificationBusiness.csproj">
+      <Project>{644A1650-A071-47F8-B618-3A51CB9A50E1}</Project>
+      <Name>NotificationBusiness</Name>
+    </ProjectReference>
     <ProjectReference Include="..\NotificationRepository\NotificationRepository.csproj">
       <Project>{002EC0D6-3884-47B0-8159-5C899FD9C0F6}</Project>
       <Name>NotificationRepository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Notification\Notification.csproj">
+      <Project>{06D9C4DA-8630-46C6-9B39-B4717BCD080D}</Project>
+      <Name>Notification</Name>
     </ProjectReference>
     <ProjectReference Include="..\ProductBusiness\ProductBusiness.csproj">
       <Project>{6e1b65d4-bda0-458e-9a90-c7f4ab03de62}</Project>
