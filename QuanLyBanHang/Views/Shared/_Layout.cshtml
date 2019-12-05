@@ -132,11 +132,16 @@
                 <!-- BEGIN Button Tasks -->
                 @if (this.Session["User"] != null && this.Session["User"].Equals("admin"))
                 {
+                    int num = 0;
+                    foreach(var item in this.ViewBag.Notification)
+                    {
+                        if (item.StatusNoti == 1) { num++; }
+                    }
                     <!-- BEGIN Button Notifications -->
                     <li class="hidden-xs">
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <i class="fa fa-bell"></i>
-                            <span class="badge badge-important">@this.ViewBag.Notification.Count</span>
+                            <span class="badge badge-important">@num</span>
                         </a>
 
                         <!-- BEGIN Notifications Dropdown -->
@@ -148,7 +153,10 @@
 
                     @foreach (var item in this.ViewBag.Notification)
                     {
-                        if (item.Status==0) {
+                        if (item.StatusNoti == 1)
+                        {
+                            if (item.Status == 0)
+                            {
 
 
                             <li class="notify">
@@ -159,7 +167,9 @@
                                 </a>
                             </li>
 
-                        } else if (item.Status == 2) {
+                            }
+                            else if (item.Status == 2)
+                            {
 
                             <li class="notify">
                                 <a href="#">
@@ -169,7 +179,9 @@
                                 </a>
                             </li>
 
-                        } else {
+                            }
+                            else
+                            {
 
                             <li class="notify">
                                 <a href="#">
@@ -179,6 +191,7 @@
                                 </a>
                             </li>
 
+                            }
                         }
                     }
                             @*<li class="more">
