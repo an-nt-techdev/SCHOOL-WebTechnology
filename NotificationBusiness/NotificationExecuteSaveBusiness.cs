@@ -15,6 +15,14 @@ namespace Business
         public Notification Item { get; set; }
         public bool Execute()
         {
+            if (this.EditFlag == "N")
+            {
+                using (var cmd = new NotificationUpdateRepository())
+                {
+                    cmd.Item = this.Item;
+                    return cmd.Execute();
+                }
+            }
             if (this.EditFlag == "M")
             {
                 using(var cmd = new NotificationChangeStatusRepository())

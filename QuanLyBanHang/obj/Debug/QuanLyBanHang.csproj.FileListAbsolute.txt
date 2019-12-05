@@ -745,3 +745,5 @@ D:\CN-WEB-NET\NET-WEB-Technology\QuanLyBanHang\bin\NotificationRepository.dll
 D:\CN-WEB-NET\NET-WEB-Technology\QuanLyBanHang\bin\Notification.dll
 D:\CN-WEB-NET\NET-WEB-Technology\QuanLyBanHang\bin\NotificationRepository.pdb
 D:\CN-WEB-NET\NET-WEB-Technology\QuanLyBanHang\bin\Notification.pdb
+D:\CN-WEB-NET\NET-WEB-Technology\QuanLyBanHang\bin\NotificationBusiness.dll
+D:\CN-WEB-NET\NET-WEB-Technology\QuanLyBanHang\bin\NotificationBusiness.pdb

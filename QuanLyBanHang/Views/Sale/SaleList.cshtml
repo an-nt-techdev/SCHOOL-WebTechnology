@@ -142,6 +142,20 @@
                         })
                     }
                 );
+                $.post(
+                    '/CommandBase/NotificationExecuteSave',
+                    {
+                        CommandAction: {
+                            Item: {
+                                NotificationId: 1,
+                                SaleId: id,
+                                Status: 0
+                            },
+                            EditFlag: "N",
+                        }
+                    },
+                    function (result) {}
+                );
             }
         });
     }

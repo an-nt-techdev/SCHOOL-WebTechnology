@@ -15,7 +15,7 @@ namespace Repository
         {
             using (var cmd = new Query())
             {
-                cmd.QueryString = "UPDATE [dbo].[Notificaiton] SET [Status] = '" + Item.Status + "' WHERE [Notification].NotificationId = '" + Item.NotificationId + "'";
+                cmd.QueryString = "UPDATE [dbo].[Notification] SET [StatusNoti] = 1 WHERE [Notification].SaleId = " + this.Item.SaleId;
                 return cmd.ExecuteQueryNonReader();
             }
         }
