@@ -38,8 +38,6 @@ namespace QuanLyBanHang.Controllers
             {
                 ViewBag.Notification = cmd.Execute();
             }
-            NotificationListAction CommandAction = new NotificationListAction();
-                ViewBag.Noti = CommandAction.Execute();
         }
     }
 }
