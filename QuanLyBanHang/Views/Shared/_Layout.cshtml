@@ -148,7 +148,7 @@
                         <ul class="dropdown-navbar dropdown-menu">
                             <li class="nav-header">
                                 <i class="fa fa-warning"></i>
-                                @this.ViewBag.Notification.Count notification
+                                @num notification
                             </li>
 
                     @foreach (var item in this.ViewBag.Notification)
@@ -160,7 +160,7 @@
 
 
                             <li class="notify">
-                                <a href="#" onclick="">
+                                <a href="#" onclick="btnshow1(@item.SaleId)">
                                     <i class="fa fa-comment orange"></i>
                                     <p>Đơn hàng @item.SaleId chưa được xử lý</p>
                                     @*<span class="badge badge-warning">4</span>*@
@@ -172,7 +172,7 @@
                             {
 
                             <li class="notify">
-                                <a href="#">
+                                <a href="#" onclick="btnshow1(@item.SaleId)">
                                     <i class="fa fa-twitter blue"></i>
                                     <p>Đơn hàng @item.SaleId đang giao hàng</p>
                                     @*<span class="badge badge-info">7</span>*@
@@ -184,7 +184,7 @@
                             {
 
                             <li class="notify">
-                                <a href="#">
+                                <a href="#" onclick="btnshow1(@item.SaleId)">
                                     <i class="fa fa-shopping-cart green"></i>
                                     <p>Đơn hàng @item.SaleId đã hoàn thành</p>
                                     @*<span class="badge badge-success">+10</span>*@
@@ -413,6 +413,11 @@
         function btnEdit2(employeeid) {
             openPopup({
                 url: "/Employee/EmployeeInput?CommandAction.EmployeeId=" + employeeid
+            });
+        }
+        function btnshow1(id) {
+            openPopup({
+                url: '/Sale/SaleView?CommandAction.SaleId=' + id
             });
         }
     </script>
