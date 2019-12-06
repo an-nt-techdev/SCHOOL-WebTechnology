@@ -89,8 +89,12 @@
                                                 {
                                                     <a title="Xóa" href="#" onclick="btnDelete(@item.SaleId); return false;" type="button" class="btn btn-gray btn-sm"><span class="fa fa-trash-o"></span></a>
                                                 }
-                                                <a title="Giao Hàng" href="#" onclick="changeStatus1(@item.SaleId,2); return false;" type="button" class="btn btn-success btn-sm"><span class="fa fa-shopping-cart"></span></a>
-                                                <a title="Hoàn thành" href="#" onclick="changeStatus1(@item.SaleId,1); return false;" type="button" class="btn btn-primary btn-sm"><span class="fa fa-check-square-o"></span></a>
+                                                if (item.Qty != 0)
+                                                {
+                                                    <a title="Giao Hàng" href="#" onclick="changeStatus1(@item.SaleId,2); return false;" type="button" class="btn btn-success btn-sm"><span class="fa fa-shopping-cart"></span></a>
+                                                    <a title="Hoàn thành" href="#" onclick="changeStatus1(@item.SaleId,1); return false;" type="button" class="btn btn-primary btn-sm"><span class="fa fa-check-square-o"></span></a>
+                                                }
+
                                             }
                                             else if (item.Status == 2)
                                             {
