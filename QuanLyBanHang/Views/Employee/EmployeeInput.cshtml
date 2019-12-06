@@ -161,16 +161,10 @@ else
         if ($("#EmployeeName").val()=="") {
             alert("Vui Lòng Điền Tên");
         }
-        else if ($("#Email").val() == "") {
-            alert("Vui Lòng Điền Email");
-        }
-        else if ($("#Address").val() == "") {
-            alert("Vui Lòng Điền Địa Chỉ");
-        }
         else if ($("#Phone").val() == "") {
             alert("Vui Lòng Điền Số Điện Thoại");
         }
-        else if (!EmailRe.test($("#Email").val())) {
+        else if (!EmailRe.test($("#Email").val()) && $("#Email").val() != "") {
             alert("Điền Sai Email");
         }
         else {
