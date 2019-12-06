@@ -65,7 +65,7 @@
                                 <div class="col-sm-5 col-lg-3 controls">
                                     <div class="input-group date date-picker" data-date="@Convert.ToDateTime(this.ViewBag.Result[0].SaleDate).ToString("yyyy-MM-dd")" data-date-format="dd-mm-yyyy" data-date-viewmode="years">
                                         <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                                        <input name="SaleDate" class="form-control date-picker" size="16" type="text" value="@Convert.ToDateTime(this.ViewBag.Result[0].SaleDate).ToString("yyyy-MM-dd")" disabled>
+                                        <input name="SaleDate" class="form-control date-picker" size="16" type="text" value="@Convert.ToDateTime(this.ViewBag.Result[0].SaleDate).ToString("yyyy-MM-dd")" >
                                     </div>
                                 </div>
                             </div>
@@ -157,7 +157,7 @@ else
                                 <div class="col-sm-5 col-lg-3 controls">
                                     <div class="input-group date date-picker" data-date="" data-date-format="dd-mm-yyyy" data-date-viewmode="years">
                                         <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                                        <input name="SaleDate" class="form-control date-picker" size="16" type="text" value="@DateTime.Now.ToString("yyyy-MM-dd")" disabled>
+                                        <input name="SaleDate" class="form-control date-picker" size="16" type="text" value="@DateTime.Now.ToString("yyyy-MM-dd")" >
                                     </div>
                                 </div>
                             </div>
@@ -210,48 +210,55 @@ else
         $("#EmployeeName").val(name);
     }
     function onBtnSave(id) {
-        var data = $("#validation-form").serializeArray();
-        var ar = new Array();
-        $.each(data, function (k, v) {
-            ar[v.name] = v.value;
-        });
-        if (id != 0) {
-            $.post(
-                '/Sale/SaleExecuteSave',
-                {
-                    CommandAction: {
-                        Item: {
-                            SaleId: id,
-                            CustomerId: ar.CustomerId,
-                            EmployeeId: ar.EmployeeId,
-                            SaleDate: ar.SaleDate,
-                            Note : ar.Note
-                        },
-                        EditFlag: "M"
-                    }
-                },
-                function (result) {
-                    callback(result);
-                }
-            );
+        if ($("#CustomerId").val() == "") {
+            alert("Vui Lòng Chọn Khách Hàng");
+        }
+        else if ($("#EmployeeId").val() == "") {
+            alert("Vui Lòng Chọn Nhân Viên");
         }
         else {
-            $.post(
-                '/Sale/SaleExecuteSave',
-                {
-                    CommandAction: {
-                        Item: {
-                            CustomerId: ar.CustomerId,
-                            EmployeeId: ar.EmployeeId,
-                            SaleDate: ar.SaleDate
+            var data = $("#validation-form").serializeArray();
+            var ar = new Array();
+            $.each(data, function (k, v) {
+                ar[v.name] = v.value;
+            });
+            if (id != 0) {
+                $.post(
+                    '/Sale/SaleExecuteSave',
+                    {
+                        CommandAction: {
+                            Item: {
+                                SaleId: id,
+                                CustomerId: ar.CustomerId,
+                                EmployeeId: ar.EmployeeId,
+                                SaleDate: ar.SaleDate,
+                                Note: ar.Note
+                            },
+                            EditFlag: "M"
                         }
+                    },
+                    function (result) {
+                        callback(result);
                     }
-                },
-                function (result) {
-                    callback(result);
-                }
-            );
-            $.post(
+                );
+            }
+            else {
+                $.post(
+                    '/Sale/SaleExecuteSave',
+                    {
+                        CommandAction: {
+                            Item: {
+                                CustomerId: ar.CustomerId,
+                                EmployeeId: ar.EmployeeId,
+                                SaleDate: ar.SaleDate
+                            }
+                        }
+                    },
+                    function (result) {
+                        callback(result);
+                    }
+                );
+                $.post(
                     '/CommandBase/NotificationExecuteSave',
                     {
                         CommandAction: {
@@ -261,9 +268,11 @@ else
                             EditFlag: "IN"
                         }
                     },
-                    function (result) {}
+                    function (result) { }
                 );
+            }
         }
+        
     }
     function AddData(id, name) {
         $("#CustomerId_span").html(id);
