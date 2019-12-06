@@ -9,7 +9,7 @@
         <!-- BEGIN Page Title -->
         <div class="page-title">
             <div>
-                <h1><i class="fa fa-wrench"></i>Cập nhật thông tin sản phẩm</h1>
+                <h1><i class="fa fa-wrench"></i>Cập nhật thông tin sách</h1>
             </div>
         </div>
         <!-- END Page Title -->
@@ -29,24 +29,24 @@
                     <div class="box-content">
                         <form action="#" class="form-horizontal" id="validation-form" method="post">
                             <div class="form-group">
-                                <label class="col-sm-3 col-lg-2 control-label" for="ProductId">Mã sản phẩm:</label>
+                                <label class="col-sm-3 col-lg-2 control-label" for="ProductId">Mã sách:</label>
                                 <div class="col-sm-6 col-lg-4 controls">
                                     <input type="text" name="ProductId" value="@this.ViewBag.Result[0].ProductId" disabled id="ProductId" class="form-control" data-rule-required="true" data-rule-minlength="3" />
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 col-lg-2 control-label" for="ProductName">Tên sản phẩm (*):</label>
+                                <label class="col-sm-3 col-lg-2 control-label" for="ProductName">Tên sách (*):</label>
                                 <div class="col-sm-6 col-lg-4 controls">
                                     <input required type="text" value="@this.ViewBag.Result[0].ProductName" name="ProductName" id="ProductName" class="form-control" data-rule-required="true" data-rule-minlength="3" />
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 col-lg-2 control-label">Nhóm hàng hóa:</label>
+                                <label class="col-sm-3 col-lg-2 control-label">Nhóm sách:</label>
                                 <div class="col-sm-6 col-lg-4 controls">
                                     <div class="input-group">
                                         <span class="input-group-addon" id="ProductGroupId_span">@this.ViewBag.Result[0].ProductGroupId</span>
                                         <input type="hidden" id="ProductGroupId" name="ProductGroupId"/>
-                                        <input type="text" id="ProductGroupName" value="@this.ViewBag.Result[0].ProductGroupName" placeholder="Tên nhóm hàng hóa" class="form-control">
+                                        <input type="text" id="ProductGroupName" value="@this.ViewBag.Result[0].ProductGroupName" placeholder="Chọn nhóm sách ở đây    ---->  " class="form-control" disabled>
                                         <span class="input-group-btn">
                                             <button class="btn btn-yellow" onclick="btnSearchProductGroup();"  type="button">Tìm kiếm!</button>
                                         </span>
@@ -98,7 +98,7 @@ else
         <!-- BEGIN Page Title -->
         <div class="page-title">
             <div>
-                <h1><i class="fa fa-plus"></i>Thêm thông tin sản phẩm</h1>
+                <h1><i class="fa fa-plus"></i>Thêm thông tin sách</h1>
             </div>
         </div>
         <!-- END Page Title -->
@@ -118,24 +118,24 @@ else
                     <div class="box-content">
                         <form action="#" class="form-horizontal" id="validation-form" method="post">
                             <div class="form-group">
-                                <label class="col-sm-3 col-lg-2 control-label" for="ProductId">Mã sản phẩm:</label>
+                                <label class="col-sm-3 col-lg-2 control-label" for="ProductId">Mã sách:</label>
                                 <div class="col-sm-6 col-lg-4 controls">
-                                    <input type="text" name="ProductId" value="" disabled id="ProductId" class="form-control" data-rule-required="true" data-rule-minlength="3" />
+                                    <input type="text" name="ProductId" value="" disabled id="ProductId" class="form-control" data-rule-required="true" data-rule-minlength="3" required/>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 col-lg-2 control-label" for="ProductName">Tên sản phẩm (*):</label>
+                                <label class="col-sm-3 col-lg-2 control-label" for="ProductName">Tên sách (*):</label>
                                 <div class="col-sm-6 col-lg-4 controls">
-                                    <input required type="text" value="" name="ProductName" id="ProductName" class="form-control" data-rule-required="true" data-rule-minlength="3" />
+                                    <input required type="text" value="" name="ProductName" id="ProductName" class="form-control" data-rule-required="true" data-rule-minlength="3"/>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label class="col-sm-3 col-lg-2 control-label">Nhóm hàng hóa:</label>
+                                <label class="col-sm-3 col-lg-2 control-label">Nhóm sách (*):</label>
                                 <div class="col-sm-6 col-lg-4 controls">
                                     <div class="input-group">
                                         <span class="input-group-addon" id="ProductGroupId_span">0</span>
-                                        <input type="hidden" id="ProductGroupId" name="ProductGroupId" />
-                                        <input type="text" id="ProductGroupName" placeholder="Tên nhóm hàng hóa" class="form-control">
+                                        <input type="hidden" id="ProductGroupId" name="ProductGroupId" data-rule-required="true" />
+                                        <input type="text" id="ProductGroupName" placeholder="Chọn nhóm sách ở đây    ---->  " class="form-control" disabled data-rule-required="true" required>
                                         <span class="input-group-btn">
                                             <button class="btn btn-yellow" onclick="btnSearchProductGroup();" type="button">Tìm kiếm!</button>
                                         </span>

@@ -40,7 +40,7 @@
                                     <div class="input-group">
                                         <span class="input-group-addon" id="CustomerId_span">@this.ViewBag.Result[0].CustomerId</span>
                                         <input type="hidden" id="CustomerId" name="CustomerId" value="@this.ViewBag.Result[0].CustomerId" />
-                                        <input type="text" name="CustomerName" id="CustomerName" value="@this.ViewBag.Result[0].CustomerName" placeholder="Search here..." class="form-control">
+                                        <input type="text" name="CustomerName" id="CustomerName" value="@this.ViewBag.Result[0].CustomerName" placeholder="Search here..." class="form-control" disabled>
                                         <span class="input-group-btn">
                                             <button class="btn btn-yellow" onclick="btnSearchCustomer();" type="button">Tìm kiếm!</button>
                                         </span>
@@ -52,8 +52,8 @@
                                 <div class="col-sm-6 col-lg-4 controls">
                                     <div class="input-group">
                                         <span class="input-group-addon" id="EmployeeId_span">@this.ViewBag.Result[0].EmployeeId</span>
-                                        <input type="hidden" id="EmployeeId" name="EmployeeId" value="@this.ViewBag.Result[0].EmployeeId" />
-                                        <input type="text" name="EmployeeName" id="EmployeeName" value="@this.ViewBag.Result[0].EmployeeName" placeholder="Search here..." class="form-control">
+                                        <input type="hidden" id="EmployeeId" name="EmployeeId" value="@this.ViewBag.Result[0].EmployeeId" /> 
+                                        <input type="text" name="EmployeeName" id="EmployeeName" value="@this.ViewBag.Result[0].EmployeeName" placeholder="Search here..." class="form-control" disabled>
                                         <span class="input-group-btn">
                                             <button class="btn btn-yellow" onclick="btnSearchEmployee();" type="button">Tìm kiếm!</button>
                                         </span>
@@ -65,7 +65,7 @@
                                 <div class="col-sm-5 col-lg-3 controls">
                                     <div class="input-group date date-picker" data-date="@Convert.ToDateTime(this.ViewBag.Result[0].SaleDate).ToString("yyyy-MM-dd")" data-date-format="dd-mm-yyyy" data-date-viewmode="years">
                                         <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                                        <input name="SaleDate" class="form-control date-picker" size="16" type="text" value="@Convert.ToDateTime(this.ViewBag.Result[0].SaleDate).ToString("yyyy-MM-dd")">
+                                        <input name="SaleDate" class="form-control date-picker" size="16" type="text" value="@Convert.ToDateTime(this.ViewBag.Result[0].SaleDate).ToString("yyyy-MM-dd")" disabled>
                                     </div>
                                 </div>
                             </div>
@@ -132,7 +132,7 @@ else
                                     <div class="input-group">
                                         <span class="input-group-addon" id="CustomerId_span">0</span>
                                         <input type="hidden" id="CustomerId" name="CustomerId" value="" />
-                                        <input type="text" name="CustomerName" id="CustomerName" value="" placeholder="Tên nhân viên" class="form-control">
+                                        <input type="text" name="CustomerName" id="CustomerName" value="" placeholder="Chọn khách hàng tại đây   ----> " class="form-control" disabled>
                                         <span class="input-group-btn">
                                             <button class="btn btn-yellow" onclick="btnSearchCustomer();" type="button">Tìm kiếm!</button>
                                         </span>
@@ -145,7 +145,7 @@ else
                                     <div class="input-group">
                                         <span class="input-group-addon" id="EmployeeId_span">0</span>
                                         <input type="hidden" id="EmployeeId" name="EmployeeId" value="" />
-                                        <input type="text" name="EmployeeName" id="EmployeeName" value="" placeholder="Tên nhân viên" class="form-control">
+                                        <input type="text" name="EmployeeName" id="EmployeeName" value="" placeholder="Chọn nhân viên tại đây      ----> " class="form-control" disabled>
                                         <span class="input-group-btn">
                                             <button class="btn btn-yellow" onclick="btnSearchEmployee();" type="button">Tìm kiếm!</button>
                                         </span>
@@ -157,7 +157,7 @@ else
                                 <div class="col-sm-5 col-lg-3 controls">
                                     <div class="input-group date date-picker" data-date="" data-date-format="dd-mm-yyyy" data-date-viewmode="years">
                                         <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                                        <input name="SaleDate" class="form-control date-picker" size="16" type="text" value="@DateTime.Now.ToString("yyyy-MM-dd")">
+                                        <input name="SaleDate" class="form-control date-picker" size="16" type="text" value="@DateTime.Now.ToString("yyyy-MM-dd")" disabled>
                                     </div>
                                 </div>
                             </div>
