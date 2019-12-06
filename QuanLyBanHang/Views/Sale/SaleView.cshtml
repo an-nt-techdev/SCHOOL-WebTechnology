@@ -116,7 +116,7 @@
                 '/Sale/SaleItemExecuteSave',
                 {
                     CommandAction: {
-                        Item : ViewData.Data
+                        Item: ViewData.Data
                     }
                 },
                 function (result) {
@@ -125,10 +125,16 @@
             );
 
         }
+        else {
+            this.isPopup = false;
+        }
     }
 
 
     function addTable(id) {
+        var obj = {};
+        obj.ProductId = id;
+        obj.Qty = 1;
         var table = $("#body-table");
         $.post(
             '/Product/ProductGetById',
@@ -161,13 +167,25 @@
                     table[0].innerHTML = '';
                     
                     $.each(ViewData.Data, function (k, v) {
-                        table[0].innerHTML += '<tr class="table-flag-blue"> <td><input type="checkbox"/></td><td>' + v.ProductId + '</td><td> <a href="#">' + v.ProductName + '</a> </td><td>' + v.Qty + '</td><td>' + Format(v.Price) + '</td><td>' + Format(v.Total) + '</td><td> <a title="Xóa" href="#" onclick="del(' + k + ')" type="button" class="btn btn-default btn-sm"><span class="fa fa-trash-o"></span></a> </td></tr>';
+                        table[0].innerHTML += '<tr class="table-flag-blue"> <td><input type="checkbox"/></td><td>' + v.ProductId + '</td><td> <a href="#">' + v.ProductName + '</a> </td><td>' + v.Qty + '</td><td>' + Format(v.Price) + '</td><td>' + Format(v.Total) + '</td><td> <a title="Xóa" href="#" onclick="del(' + k + ')" type="button" class="btn btn-default btn-sm"><span class="fa fa-trash-o"></span></a> </td><td> <a title="Giảm" href="#" onclick="red(' + k + ')" type="button" class="btn btn-default btn-info"></a> </td></tr>';
                     });
                 } else {
                     noti(res.Message, 'error');
                 }
             }
         );
+        //$post(
+        //    '/Product/ProductExecuteSave',
+        //    {
+        //        CommandAction: {
+        //            Item: obj,
+        //            EditFlag: "R"
+        //        }
+                
+        //    },
+        //    function (result) {
+        //    }
+        //);
     }
     function del(id) {
         delete (ViewData.Data[id]);
@@ -178,8 +196,21 @@
         var table = $("#body-table");
         table[0].innerHTML = '';
         $.each(ViewData.Data, function (k, v) {
-            table[0].innerHTML += '<tr class="table-flag-blue"> <td><input type="checkbox"/></td><td>' + v.ProductId + '</td><td> <a href="#">' + v.ProductName + '</a> </td><td>' + v.Qty + '</td><td>' + Format(v.Price) + '</td><td>' + Format(v.Total) + '</td><td> <a title="Xóa" href="#" onclick="del(' + k + ')" type="button" class="btn btn-default btn-sm"><span class="fa fa-trash-o"></span></a> </td></tr>';
+            table[0].innerHTML += '<tr class="table-flag-blue"> <td><input type="checkbox"/></td><td>' + v.ProductId + '</td><td> <a href="#">' + v.ProductName + '</a> </td><td>' + v.Qty + '</td><td>' + Format(v.Price) + '</td><td>' + Format(v.Total) + '</td><td> <a title="Xóa" href="#" onclick="del(' + k + ')" type="button" class="btn btn-default btn-sm"><span class="fa fa-trash-o"></span></a> </td><td> <a title="Giảm" href="#" onclick="red(' + k + ')" type="button" class="btn btn-default btn-info"></a> </td></tr>';
         });
+    }
+    function red(id) {
+        if (ViewData.Data[id].Qty > 1) {
+            ViewData.Data[id].Qty--;
+            var table = $("#body-table");
+            table[0].innerHTML = '';
+            $.each(ViewData.Data, function (k, v) {
+                table[0].innerHTML += '<tr class="table-flag-blue"> <td><input type="checkbox"/></td><td>' + v.ProductId + '</td><td> <a href="#">' + v.ProductName + '</a> </td><td>' + v.Qty + '</td><td>' + Format(v.Price) + '</td><td>' + Format(v.Total) + '</td><td> <a title="Xóa" href="#" onclick="del(' + k + ')" type="button" class="btn btn-default btn-sm"><span class="fa fa-trash-o"></span></a> </td><td> <a title="Giảm" href="#" onclick="red(' + k + ')" type="button" class="btn btn-default btn-info"></a> </td></tr>';
+            });
+        }
+        else {
+            //del(id);
+        }
     }
     function btnProductNameClick(id) {
         openPopup({

@@ -59,6 +59,7 @@
                             <tbody>
                                 @foreach (var item in this.ViewBag.Result)
                                 {
+                                    int num = item.Qty;
                                     <tr class="table-flag-blue">
                                         <td>@item.ProductId</td>
                                         <td>@item.ProductName</td>
@@ -66,7 +67,7 @@
                                             <a href="#" onclick="ProductGroupInput(@item.ProductGroupId);return false;">@item.ProductGroupName</a>
                                         </td>
                                         <td>@Convert.ToInt32(item.Price).ToString("#,##0")</td>
-                                        <td>@Convert.ToInt32(item.Qty).ToString("#,##0")</td>
+                                        <td id="@item.ProductId">@Convert.ToInt32(num).ToString("#,##0")</td>
                                         <td>@item.Barcode</td>
                                         <td>
                                             @if (!this.ViewBag.ispopup)
@@ -77,7 +78,7 @@
 
                                             @if (this.ViewBag.isPopup)
                                             {
-                                                <a title="Tick" href="#" onclick="window.opener.addTable(@item.ProductId);" type="button" class="btn btn-default btn-sm"><span class="fa fa-check"></span></a>
+                                                <a title="Tick" href="#" onclick="tets(@item.ProductId);window.opener.addTable(@item.ProductId);" type="button" class="btn btn-default btn-sm"><span class="fa fa-check"></span></a>
 
                                             }
                                         </td>
@@ -155,5 +156,9 @@
             url: "/Product/ProductGroupInput?CommandAction.ProductGroupId=" + id,
             parameter: "width=800,height=800,top=0"
         });
+    }
+    function tets(id) {
+        var c =parseInt(document.getElementById(id).innerHTML);
+        document.getElementById(id).innerHTML = c - 1;
     }
 </script>
