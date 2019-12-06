@@ -13,11 +13,11 @@
             <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Mật khẩu" required>
             <div id="remember" class="checkbox">
                 <label>
-                    <input type="checkbox" disabled value="remember-me"> Ghi nhớ
+                    <input type="checkbox" disabled value="remember-me" hidden>
                 </label>
             </div>
             <button class="btn btn-lg btn-primary btn-block btn-signin" onclick="btnLogin(); return false;" type="button">Đăng nhập</button>
-            <div class="g-signin2" data-onsuccess="onSignIn"></div>        
+            <div class="g-signin2" data-onsuccess="onSignIn" hidden></div>        
         </form><!-- /form -->
         
     </div><!-- /card-container -->

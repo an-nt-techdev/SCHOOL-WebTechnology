@@ -3,7 +3,6 @@
     ViewBag.Title = "SaleView";
     Layout = "~/Views/Shared/_LayoutInput.cshtml";
 }
-
 <div id="main-content">
     <!-- BEGIN Page Title -->
     <div class="page-title">
@@ -28,10 +27,23 @@
                 </div>
                 <div class="box-content">
                     <div class="btn-toolbar pull-right clearfix">
-                        <div class="btn-group">
-                            <a class="btn btn-circle show-tooltip" onclick="btnAddProduct();" title="Thêm sách vào đơn hàng" href="#"><i class="fa fa-plus"></i></a>
-                        </div>
-                        
+                        @if (this.ViewBag.Result.Count > 0)
+                        {
+                            if (this.ViewBag.Result[0].Status == 0)
+                            {
+                                <div class="btn-group">
+                                    <a class="btn btn-circle show-tooltip" onclick="btnAddProduct();" title="Thêm sách vào đơn hàng" href="#"><i class="fa fa-plus"></i></a>
+                                </div>
+                            }
+                        }
+                        else
+                        {
+                            <div class="btn-group">
+                                <a class="btn btn-circle show-tooltip" onclick="btnAddProduct();" title="Thêm sách vào đơn hàng" href="#"><i class="fa fa-plus"></i></a>
+                            </div>
+
+                        }
+
                         <div class="btn-group">
                             <a class="btn btn-circle show-tooltip" title="Lưu đơn hàng" onclick="btnSave();" href="#"><i class="fa fa-save"></i></a>
                         </div>
