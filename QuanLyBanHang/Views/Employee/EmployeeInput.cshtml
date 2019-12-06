@@ -157,48 +157,66 @@ else
 }
 <script>
     function onBtnSave(id = null) {
-        if (id != null) {
-
+        var EmailRe = /^([\w-\.]+)@@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+        if ($("#EmployeeName").val()=="") {
+            alert("Vui Lòng Điền Tên");
         }
-        var obj = {};
-        $.each($("#validation-form").serializeArray(), function (k, v) {
-            obj[v.name] = v.value;
-        });
-        if (!obj["EmployeeId"]) {
-            obj["EmployeeId"] = id;
+        else if ($("#Email").val() == "") {
+            alert("Vui Lòng Điền Email");
         }
-
-        if (id != null) {
-            $.post(
-                '/Employee/EmployeeExecuteSave',
-                {
-                    CommandAction: {
-                        EmployeeList: obj,
-                        EditFlag: "M"
-                    }
-                },
-                function (result) {
-                    if (result.IsSuccess == true) {
-                        callback(result);
-                    }
-                }
-            );
+        else if ($("#Address").val() == "") {
+            alert("Vui Lòng Điền Địa Chỉ");
+        }
+        else if ($("#Phone").val() == "") {
+            alert("Vui Lòng Điền Số Điện Thoại");
+        }
+        else if (!EmailRe.test($("#Email").val())) {
+            alert("Điền Sai Email");
         }
         else {
-            $.post(
-                '/Employee/EmployeeExecuteSave',
-                {
-                    CommandAction: {
-                        EmployeeList: obj,
-                        EditFlag: "I"
+            if (id != null) {
+
+            }
+            var obj = {};
+            $.each($("#validation-form").serializeArray(), function (k, v) {
+                obj[v.name] = v.value;
+            });
+            if (!obj["EmployeeId"]) {
+                obj["EmployeeId"] = id;
+            }
+
+            if (id != null) {
+                $.post(
+                    '/Employee/EmployeeExecuteSave',
+                    {
+                        CommandAction: {
+                            EmployeeList: obj,
+                            EditFlag: "M"
+                        }
+                    },
+                    function (result) {
+                        if (result.IsSuccess == true) {
+                            callback(result);
+                        }
                     }
-                },
-                function (result) {
-                    if (result.IsSuccess == true) {
-                        callback(result);
+                );
+            }
+            else {
+                $.post(
+                    '/Employee/EmployeeExecuteSave',
+                    {
+                        CommandAction: {
+                            EmployeeList: obj,
+                            EditFlag: "I"
+                        }
+                    },
+                    function (result) {
+                        if (result.IsSuccess == true) {
+                            callback(result);
+                        }
                     }
-                }
-            );
+                );
+            }
         }
     }
 
