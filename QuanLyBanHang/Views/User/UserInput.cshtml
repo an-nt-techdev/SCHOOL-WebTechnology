@@ -49,7 +49,7 @@
                                         <div class="input-group">
                                             <span class="input-group-addon" id="EmployeeId_span">@this.ViewBag.Result[0].EmployeeId</span>
                                             <input type="hidden" id="EmployeeId" name="EmployeeId" value="@this.ViewBag.Result[0].EmployeeId" />
-                                            <input type="text" name="EmployeeName" id="EmployeeName" value="@this.ViewBag.Result[0].EmployeeName" placeholder="Tên nhân viên" class="form-control">
+                                            <input type="text" name="EmployeeName" id="EmployeeName" value="@this.ViewBag.Result[0].EmployeeName" placeholder="Tên nhân viên" class="form-control" disabled>
                                             <span class="input-group-btn">
                                                 <button class="btn btn-yellow" onclick="btnSearchEmployee();" type="button">Tìm kiếm!</button>
                                             </span>
@@ -65,7 +65,7 @@
                                         <div class="input-group">
                                             <span class="input-group-addon" id="EmployeeId_span">@this.ViewBag.Result[0].EmployeeId</span>
                                             <input type="hidden" id="EmployeeId" name="EmployeeId" value="@this.ViewBag.Result[0].EmployeeId" />
-                                            <input type="text" name="EmployeeName" id="EmployeeName" value="" placeholder="Tên nhân viên" class="form-control">
+                                            <input type="text" name="EmployeeName" id="EmployeeName" value="" placeholder="Tên nhân viên" class="form-control" disabled>
                                             <span class="input-group-btn">
                                                 <button class="btn btn-yellow" onclick="btnSearchEmployee();" type="button">Tìm kiếm!</button>
                                             </span>
@@ -142,7 +142,7 @@ else
                                     <div class="input-group">
                                         <span class="input-group-addon" id="EmployeeId_span">0</span>
                                         <input type="hidden" id="EmployeeId" name="EmployeeId" value="" />
-                                        <input type="text" name="EmployeeName" id="EmployeeName" value="" placeholder="Tên nhân viên" class="form-control">
+                                        <input type="text" name="EmployeeName" id="EmployeeName" value="" placeholder="Tên nhân viên" class="form-control" disabled>
                                         <span class="input-group-btn">
                                             <button class="btn btn-yellow" onclick="btnSearchEmployee();" type="button">Tìm kiếm!</button>
                                         </span>
