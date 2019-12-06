@@ -172,51 +172,65 @@ else
 
 <script>
     function onBtnSave(id = null) {
-        if (id != null) {
-
+        if ($("#Username").val()=="") {
+            alert("Vui Lòng Điền Tài Khoản");
         }
-        var obj = {};
-        $.each($("#validation-form").serializeArray(), function (k, v) {
-            obj[v.name] = v.value;
-        });
-        if (!obj["Username"]) {
-            obj["Username"] = id;
+        else if ($("#Password").val() == "") {
+            alert("Vui Lòng Điền Mật Khẩu");
         }
-        if (id != null) {
-            $.post(
-                '/User/UserExecuteSave',
-                {
-                    CommandAction: {
-                        UserList: obj,
-                        EditFlag: "M"
-                    }
-                },
-                function (result) {
-                    noti(result.Message);
-                    debugger;
-                    if (result.IsSuccess) {
-                        callback(result);
-                    }
-
-                }
-            );
+        else if ($("#RePassword").val() == "") {
+            alert("Vui Lòng Nhập Lại Mật Khẩu");
+        }
+        else if ($("#RePassword").val() != $("#Password").val() && (@ViewBag.Result.Count<=0)) {
+            alert("Nhập Lại Mật Khẩu Sai!!");
         }
         else {
-            $.post(
-                '/User/UserExecuteSave',
-                {
-                    CommandAction: {
-                        UserList: obj,
-                        EditFlag: "I"
+            if (id != null) {
+
+            }
+            var obj = {};
+            $.each($("#validation-form").serializeArray(), function (k, v) {
+                obj[v.name] = v.value;
+            });
+            if (!obj["Username"]) {
+                obj["Username"] = id;
+            }
+            if (id != null) {
+                $.post(
+                    '/User/UserExecuteSave',
+                    {
+                        CommandAction: {
+                            UserList: obj,
+                            EditFlag: "M"
+                        }
+                    },
+                    function (result) {
+                        noti(result.Message);
+                        debugger;
+                        if (result.IsSuccess) {
+                            callback(result);
+                        }
+
                     }
-                },
-                function (result) {
-                    noti(result.Message);
-                    if (result.IsSuccess == true) {
-                        callback(result);
+                );
+            }
+            else {
+                $.post(
+                    '/User/UserExecuteSave',
+                    {
+                        CommandAction: {
+                            UserList: obj,
+                            EditFlag: "I"
+                        }
+                    },
+                    function (result) {
+                        noti(result.Message);
+                        if (result.IsSuccess == true) {
+                            callback(result);
+                        }
                     }
-                }
-            );
+                );
+            }
         }
     }
     function AddData(id, name) {
