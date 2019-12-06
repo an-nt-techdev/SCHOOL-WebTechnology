@@ -13,7 +13,7 @@ namespace Repository
         {
             using(var cmd = new Query())
             {
-                cmd.QueryString = "SELECT [SaleItem].*,[Product].ProductName,[Product].Price,([SaleItem].Qty * [Product].Price) as Total FROM [SaleItem] LEFT JOIN [Product] on [Product].ProductId = [SaleItem].ProductId WHERE [SaleItem].SaleId = " + SaleId;
+                cmd.QueryString = "SELECT [SaleItem].*,[Product].ProductName,[Sale].Status,[Product].Price,([SaleItem].Qty * [Product].Price) as Total FROM [SaleItem] LEFT JOIN [Product] on [Product].ProductId = [SaleItem].ProductId  LEFT JOIN [Sale] on [Sale].SaleId=[SaleItem].SaleId WHERE [SaleItem].SaleId = " + SaleId;
                 return cmd.ExecuteQuery();
             }
         }

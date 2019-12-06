@@ -42,7 +42,7 @@
                         <table class="table table-advance" id="table1">
                             <thead>
                                 <tr>
-                                    @*<th style="width:18px"><input type="checkbox" /></th>*@
+                                    <th style="width:18px"><input type="checkbox" /></th>
                                     <th>Mã sản phẩm</th>
                                     <th>Tên sản phẩm</th>
                                     <th>Số lượng</th>
@@ -55,7 +55,7 @@
                                 @foreach (var item in this.ViewBag.Result)
                                 {
                                     <tr class="table-flag-blue">
-                                        @*<td><input type="checkbox" /></td>*@
+                                        <td><input type="checkbox" /></td>
                                         <td id="ProductId">@item.ProductId</td>
                                         <td>
                                             <a href="#" onclick="btnProductNameClick(@item.ProductId);">@item.ProductName</a>
