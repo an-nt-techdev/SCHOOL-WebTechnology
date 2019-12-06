@@ -55,18 +55,25 @@
                         <div class="form-group">
                             <label class="col-sm-3 col-lg-2 control-label">Khách hàng/Nhà cung cấp</label>
                             <div class="col-sm-9 col-lg-10 controls">
-                                <label class="checkbox-inline">
-                                    <input type="checkbox" @{ if (ViewBag.Result[0].isCustomer)
-                                        {
-                                            var st = "checked"; @st ;
-                                        } } name="isCustomer" id="isCustomer"> Khách hàng
-                                </label>
-                                <label class="checkbox-inline">
-                                    <input type="checkbox" @{ if (ViewBag.Result[0].isVender)
-                                        {
-                                            var st = "checked"; @st ;
-                                        } } name="isVender"> Nhà cung cấp
-                                </label>
+                                @if (this.Session["User"].Equals("admin"))
+                                {
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" @{ if (ViewBag.Result[0].isCustomer) { var st = "checked"; @st  ; } } name="isCustomer" id="isCustomer"> Khách hàng
+                                    </label>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" @{ if (ViewBag.Result[0].isVender) { var st = "checked"; @st  ; } } name="isVender"> Nhà cung cấp
+                                    </label>
+                                }
+                                else
+                                {
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" @{ if (ViewBag.Result[0].isCustomer) { var st = "checked"; @st  ; } } name="isCustomer" id="isCustomer" checked disabled> Khách hàng
+                                    </label>
+                                    <label class="checkbox-inline" hidden>
+                                        <input type="checkbox" @{ if (ViewBag.Result[0].isVender) { var st = "checked"; @st  ; } } name="isVender"> Nhà cung cấp
+                                    </label>
+                                }
+
                             </div>
                         </div>
                         <div class="form-group">

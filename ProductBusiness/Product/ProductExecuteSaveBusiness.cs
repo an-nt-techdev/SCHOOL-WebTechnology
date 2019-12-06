@@ -22,6 +22,14 @@ namespace Business
                     return cmd.Execute();
                 }
             }
+            else if (this.EditFlag == "R")
+            {
+                using (var cmd = new ProductUpdateRepository())
+                {
+                    cmd.Item = this.Item;
+                    return cmd.Execute2();
+                }
+            }
             else
             {
                 using(var cmd =new ProductInsertRepository())

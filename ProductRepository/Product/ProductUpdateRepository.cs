@@ -19,5 +19,13 @@ namespace Repository
                 return cmd.ExecuteQueryNonReader();
             }
         }
+        public bool Execute2()
+        {
+            using (var cmd = new Query())
+            {
+                cmd.QueryString = "UPDATE [dbo].[Product] SET [Qty] = [Qty]-" + Item.Qty + "WHERE [Product].ProductId = " + Item.ProductId;
+                return cmd.ExecuteQueryNonReader();
+            }
+        }
     }
 }
