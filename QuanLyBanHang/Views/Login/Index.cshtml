@@ -4,20 +4,20 @@
     Layout = "~/Views/Shared/_LayoutInput.cshtml";
 }
 <div class="container">
-    <div class="card card-container">
+    <div class="card card-container" style="margin-top: 150px;">
         <img id="profile-img" class="profile-img-card" src="~/img/avatar_2x.png" />
         <p id="profile-name" class="profile-name-card"></p>
         <form class="form-signin">
             <span id="reauth-email" class="reauth-email"></span>
             <input type="text" id="inputEmail" name="username" class="form-control" placeholder="Tên đăng nhập" required autofocus>
             <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Mật khẩu" required>
-            <div id="remember" class="checkbox">
+            @*<div id="remember" class="checkbox">
                 <label>
                     <input type="checkbox" disabled value="remember-me"> Ghi nhớ
                 </label>
-            </div>
+            </div>*@
             <button class="btn btn-lg btn-primary btn-block btn-signin" onclick="btnLogin(); return false;" type="button">Đăng nhập</button>
-            <div class="g-signin2" data-onsuccess="onSignIn"></div>        
+            @*<div class="g-signin2" data-onsuccess="onSignIn"></div>*@        
         </form><!-- /form -->
         
     </div><!-- /card-container -->
