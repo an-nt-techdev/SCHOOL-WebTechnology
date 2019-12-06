@@ -49,6 +49,7 @@
                                     <th>Giá bán</th>
                                     <th>Tổng tiền</th>
                                     <th>Hành động</th>
+                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody id="body-table">
@@ -137,6 +138,7 @@
                 }
             },
             function (result) {
+                var count = 0;
                 var res = result;
                 result = result.Data[0];
                 if (res.IsSuccess) {
@@ -154,11 +156,12 @@
                         result.SaleId = getParam("CommandAction.SaleId");
                         result.Qty = 1;
                         result.Total = result.Price;
-                        ViewData.Data.push(result);
+                        ViewData.Data.push(result); 
                     }
                     table[0].innerHTML = '';
-                    $.each(ViewData.Data, function (k,v) {
-                        table[0].innerHTML += '<tr class="table-flag-blue"> <td><input type="checkbox"/></td><td>' + v.ProductId + '</td><td> <a href="#">' + v.ProductName + '</a> </td><td>' + v.Qty + '</td><td>' + Format(v.Price) + '</td><td>' + Format(v.Total) + '</td><td> <a title="Xóa" href="#" onclick="" type="button" class="btn btn-default btn-sm"><span class="fa fa-trash-o"></span></a> </td></tr>';
+                    
+                    $.each(ViewData.Data, function (k, v) {
+                        table[0].innerHTML += '<tr class="table-flag-blue"> <td><input type="checkbox"/></td><td>' + v.ProductId + '</td><td> <a href="#">' + v.ProductName + '</a> </td><td>' + v.Qty + '</td><td>' + Format(v.Price) + '</td><td>' + Format(v.Total) + '</td><td> <a title="Xóa" href="#" onclick="del(' + k + ')" type="button" class="btn btn-default btn-sm"><span class="fa fa-trash-o"></span></a> </td></tr>';
                     });
                 } else {
                     noti(res.Message, 'error');
@@ -166,13 +169,23 @@
             }
         );
     }
-
+    function del(id) {
+        delete (ViewData.Data[id]);
+        for (var i = id; i < ViewData.Data.length; i++) {
+            ViewData.Data[i] = ViewData.Data[i + 1];
+        }
+        ViewData.Data.length--;
+        var table = $("#body-table");
+        table[0].innerHTML = '';
+        $.each(ViewData.Data, function (k, v) {
+            table[0].innerHTML += '<tr class="table-flag-blue"> <td><input type="checkbox"/></td><td>' + v.ProductId + '</td><td> <a href="#">' + v.ProductName + '</a> </td><td>' + v.Qty + '</td><td>' + Format(v.Price) + '</td><td>' + Format(v.Total) + '</td><td> <a title="Xóa" href="#" onclick="del(' + k + ')" type="button" class="btn btn-default btn-sm"><span class="fa fa-trash-o"></span></a> </td></tr>';
+        });
+    }
     function btnProductNameClick(id) {
         openPopup({
             url : '/Product/ProductInput?CommandAction.ProductId='+id
         });
     }
-
     function btnAddProduct() {
         openPopup({
             url: '/Product/ProductList',
