@@ -146,15 +146,15 @@ else
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="col-sm-3 col-lg-2 control-label">Khách hàng/Nhà cung cấp</label>
+                            <label class="col-sm-3 col-lg-2 control-label">Là Nhà Cung Cấp ?</label>
                             <div class="col-sm-9 col-lg-10 controls">
                                 @if (this.Session["User"].Equals("admin"))
                                 {
                                     <label class="checkbox-inline">
-                                        <input type="checkbox" name="isCustomer" id="isCustomer"> Khách hàng
+                                        <input type="checkbox" name="isCustomer" id="isCustomer" checked hidden>
                                     </label>
                                     <label class="checkbox-inline">
-                                        <input type="checkbox" name="isVender"> Nhà cung cấp
+                                        <input type="checkbox" name="isVender" id="isVender"> Có
                                     </label>
                                 }
                                 else
