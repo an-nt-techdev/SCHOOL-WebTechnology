@@ -32,8 +32,12 @@
                 <div class="box-content">
                     <div class="btn-toolbar pull-right clearfix">
                         <div class="btn-group">
-                            <a class="btn btn-circle show-tooltip" onclick="btnAdd(); return false;" title="Thêm" href="#"><i class="fa fa-plus"></i></a>
-                            <a class="btn btn-circle show-tooltip" title="In Barcode" href="/Product/PrintBarCode"><i class="fa fa-barcode"></i></a>
+                            @if (!this.ViewBag.ispopup)
+                            {
+                                <a class="btn btn-circle show-tooltip" onclick="btnAdd(); return false;" title="Thêm" href="#"><i class="fa fa-plus"></i></a>
+                                <a class="btn btn-circle show-tooltip" title="In Barcode" href="/Product/PrintBarCode"><i class="fa fa-barcode"></i></a>
+                            }
+
                         </div>
                         
                     </div>
@@ -65,8 +69,12 @@
                                         <td>@Convert.ToInt32(item.Qty).ToString("#,##0")</td>
                                         <td>@item.Barcode</td>
                                         <td>
-                                            <a title="Sửa" href="#" onclick="btnEdit(@item.ProductId);" type="button" class="btn btn-default btn-sm"><span class="fa fa-pencil-square-o"></span></a>
-                                            <a title="Xóa" href="#" onclick="btnDelete(@item.ProductId); return false;" type="button" class="btn btn-default btn-sm"><span class="fa fa-trash-o"></span></a>
+                                            @if (!this.ViewBag.ispopup)
+                                            {
+                                                <a title="Sửa" href="#" onclick="btnEdit(@item.ProductId);" type="button" class="btn btn-default btn-sm"><span class="fa fa-pencil-square-o"></span></a>
+                                                <a title="Xóa" href="#" onclick="btnDelete(@item.ProductId); return false;" type="button" class="btn btn-default btn-sm"><span class="fa fa-trash-o"></span></a>
+                                            }
+
                                             @if (this.ViewBag.isPopup)
                                             {
                                                 <a title="Tick" href="#" onclick="window.opener.addTable(@item.ProductId);" type="button" class="btn btn-default btn-sm"><span class="fa fa-check"></span></a>

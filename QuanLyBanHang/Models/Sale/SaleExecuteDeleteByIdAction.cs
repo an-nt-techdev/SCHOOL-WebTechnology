@@ -15,6 +15,7 @@ namespace QuanLyBanHang.Models
             {
                 cmd.SaleId = this.SaleId;
                 cmd.Execute();
+                cmd.Execute2();
             }
             using(var cmd = new SaleItemDeleteBySaleIdRepository())
             {

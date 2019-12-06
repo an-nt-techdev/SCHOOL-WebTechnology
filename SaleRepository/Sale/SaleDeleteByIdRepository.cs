@@ -16,6 +16,16 @@ namespace Repository
             {
                 cmd.QueryString = "DELETE FROM [Sale] WHERE [Sale].SaleId=" + this.SaleId;
                 return cmd.ExecuteQueryNonReader();
+                
+            }
+        }
+        public bool Execute2()
+        {
+            using (var cmd = new Query())
+            {
+                cmd.QueryString = "DELETE FROM [Notification] WHERE [Notification].SaleId=" + this.SaleId;
+                return cmd.ExecuteQueryNonReader();
+
             }
         }
     }
