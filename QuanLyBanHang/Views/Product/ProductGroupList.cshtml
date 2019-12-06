@@ -32,7 +32,10 @@
                 <div class="box-content">
                     <div class="btn-toolbar pull-right clearfix">
                         <div class="btn-group">
-                            <a class="btn btn-circle show-tooltip" onclick="btnAdd(); return false;" title="Thêm" href="#"><i class="fa fa-plus"></i></a>
+                            @if (!this.ViewBag.ispopup)
+                            {
+                                <a class="btn btn-circle show-tooltip" onclick="btnAdd(); return false;" title="Thêm" href="#"><i class="fa fa-plus"></i></a>
+                            }
                         </div>
                         
                     </div>
@@ -56,8 +59,12 @@
                                         <td>@item.ProductGroupName</td>
                                         <td>@item.Remark</td>
                                         <td>
-                                            <a title="Sửa" href="#" onclick="btnEdit(@item.ProductGroupId);" type="button" class="btn btn-default btn-sm"><span class="fa fa-pencil-square-o"></span></a>
-                                            <a title="Xóa" href="#" onclick="btnDelete(@item.ProductGroupId); return false;" type="button" class="btn btn-default btn-sm"><span class="fa fa-trash-o"></span></a>
+                                            @if (!this.ViewBag.ispopup)
+                                            {
+                                                <a title="Sửa" href="#" onclick="btnEdit(@item.ProductGroupId);" type="button" class="btn btn-default btn-sm"><span class="fa fa-pencil-square-o"></span></a>
+                                                <a title="Xóa" href="#" onclick="btnDelete(@item.ProductGroupId); return false;" type="button" class="btn btn-default btn-sm"><span class="fa fa-trash-o"></span></a>
+                                            }
+
                                             @if (this.ViewBag.isPopup)
                                             {
                                                 <a title="Chọn" href="#" onclick="window.opener.AddData(@item.ProductGroupId,'@item.ProductGroupName'); window.close();" type="button" class="btn btn-default btn-sm"><span class="fa fa-check"></span></a>
